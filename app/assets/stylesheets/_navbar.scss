@@ -1,6 +1,6 @@
 /* Add a black background color to the top navigation */
 .topnav {
-  background-color: #cb4336;
+  background-color: #DC322B;
   overflow: hidden;
 }
 
@@ -10,18 +10,35 @@
   justify-content: space-between;
   align-items: center;
 
+  img {
+    cursor: pointer;
+  }
+
   a {
-  color: #f2f2f2;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 18px;
-}
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 18px;
+    cursor: pointer;
+
+    &:hover {
+      color: #EAB4AE;
+      transition-duration: 0.2s;
+      transition-timing-function: cubic-bezier(0.25, 0.1, 0.24, 1.02);
+      transition-delay: 0s;
+    }
+  }
 
 }
 
 /* Change the color of links on hover */
-.topnav a:hover {
-  background-color: #ddd;
-  color: black;
+.cover {
+  background: url("https://www.lifeatspotify.com/images/1000x1000/Start-2000.jpg") no-repeat center center fixed;
+  width: 1425px;
+  height: 1000px;
+    -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }

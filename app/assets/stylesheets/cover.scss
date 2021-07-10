@@ -1,3 +1,34 @@
 // Place all the styles related to the Cover controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: https://sass-lang.com/
+
+/* Image of cover */
+.cover-main {
+  background: url("https://www.lifeatspotify.com/images/1000x1000/Start-2000.jpg") no-repeat center center fixed;
+  background-position: 50%;
+  width: 1425px;
+  height: 1000px;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+
+.cover-top {
+  display: flex;
+  justify-content: space-between;
+  padding: 80px;
+  h1 {
+    font-size: 100px;
+    margin-top: 18px;
+    margin-bottom: 40px;
+  }
+}
+
+.search-bar {
+  text-align: center;
+}

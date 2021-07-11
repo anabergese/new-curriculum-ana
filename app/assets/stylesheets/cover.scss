@@ -20,7 +20,7 @@
 
 .cover-top {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   padding: 80px;
   h1 {
     font-size: 100px;
@@ -34,4 +34,9 @@
 
 .search-bar {
   text-align: center;
+}
+
+.cover-top-left {
+  flex-grow: 1;
+  margin-left: 50px;
 }

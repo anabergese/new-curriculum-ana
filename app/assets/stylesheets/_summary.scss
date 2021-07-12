@@ -1,4 +1,21 @@
 .summary {
   height: 660px;
   background-color: white;
+  color: black;
+  display: flex;
+  justify-content: space-between;
+  padding: 80px;
+  .title {
+    font-size: 3.625rem;
+    margin-top: 18px;
+    margin-bottom: 40px;
+  }
+  .description {
+    font-size: 26px;
+  }
+}
+
+
+.summary-menu {
+  display: flex;
 }

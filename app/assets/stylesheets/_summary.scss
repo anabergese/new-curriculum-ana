@@ -1,21 +1,41 @@
 .summary {
   height: 660px;
   background-color: white;
-  color: black;
+  color: #191414;
   display: flex;
   justify-content: space-between;
   padding: 80px;
-  .title {
-    font-size: 3.625rem;
-    margin-top: 18px;
-    margin-bottom: 40px;
-  }
-  .description {
-    font-size: 26px;
-  }
 }
 
+.summary-rigth {
+  padding: 0 20px;
+  margin: 0 0 0 112px;
+}
 
 .summary-menu {
   display: flex;
+  p {
+    margin-top: 0;
+  }
+
+  .summary-menu-p {
+    padding-bottom: 24px;
+    margin: 0 40px 0 0;
+  }
+
+}
+
+.title {
+  font-size: 3.625rem;
+  font-weight: 400;
+  margin-top: 18px;
+  margin-bottom: 40px;
+  line-height: 110%;
+}
+
+
+.description {
+  font-size: 1.625rem;
+  font-weight: 300;
+  line-height: 150%;
 }

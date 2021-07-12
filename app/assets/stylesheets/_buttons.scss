@@ -1,31 +1,7 @@
-// .big-button {
-//   width: 186px;
-//   height: 60px;
-//   background: #191414;
-//   color: white;
-//   border-color: #191414;
-//   border-radius: 100px;
-//   text-decoration: none;
-//   display: inline-block;
-//   position: relative;
-//   font-size: 18px;
-
-//   &:hover {
-//     background-color: #DC322B;
-//     color: black;
-//     border-color: black;
-//     border-width: 1px;
-//     transition-property: all;
-//     transition-duration: 0.2s;
-//     transition-timing-function: ease;
-//     transition-delay: 0s;
-//     cursor: pointer;
-//   }
-// }
-
 @mixin button($backgroundColor) {
   width: 186px;
   height: 60px;
+  font-weight: 300;
   background: #191414;
   color: white;
   border-color: #191414;
@@ -37,8 +13,8 @@
 
   &:hover {
     background-color: $backgroundColor;
-    color: black;
-    border-color: black;
+    color: #191414;
+    border-color: #191414;
     border-width: 1px;
     transition-property: all;
     transition-duration: 0.2s;

@@ -1,0 +1,10 @@
+@import "summary";
+.jobs {
+  text-align: center;
+  height: 100vh;
+
+  h2 {
+    @include titleH2($marginTop: 0px, $marginBottom: 70px);
+    padding-top: 70px;
+  }
+}

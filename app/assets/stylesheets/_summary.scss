@@ -1,11 +1,14 @@
 .summary {
-  height: 660px;
+  width: 100vw;
+  height: 100vh;
   background-color: white;
   color: #191414;
   display: flex;
   justify-content: space-between;
-  padding: 80px;
+  align-items: center;
 }
+
+
 
 .summary-rigth {
   padding: 0 20px;
@@ -25,13 +28,17 @@
 
 }
 
-.title {
+@mixin titleH2($marginTop: 18px, $marginBottom: 40px) {
   font-size: 3.625rem;
   font-weight: 400;
-  margin-top: 18px;
-  margin-bottom: 40px;
+  margin-top: $marginTop;
+  margin-bottom: $marginBottom;
   line-height: 110%;
 }
+.title {
+  @include titleH2;
+}
+
 
 
 .description {

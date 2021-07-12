@@ -1,0 +1,43 @@
+@import "summary";
+
+
+
+
+.projects{
+  background-color: #007aff;
+  text-align: center;
+  height: 100vh;
+  h2 {
+    @include titleH2($marginTop: 0px, $marginBottom: 70px);
+    padding-top: 70px;
+
+  }
+}
+
+.project-links{
+  border-radius: 100px;
+  border: 1px solid rgba(16,16,24,.12);
+  padding: 30px 30px 30px 40px;
+  margin: 30px auto;
+  display: flex;
+  justify-content: space-between;
+  text-decoration: none;
+  align-items: center;
+  font-size: 38px;
+  font-weight: 300;
+  width: 1248px;
+  height: 62px;
+}
+
+
+.button-projects {
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    background-repeat: no-repeat;
+    background-position: 50%;
+    cursor: pointer;
+    background-color: #191414;
+    border: 1px solid #191414;
+    background-image: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjMiIGhlaWdodD0iMTgiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZD0iTTEzLjA0LjY0bC0uNjUyLjc1OCA4LjI2NiA3LjEwOEguMDAxdjFoMjAuNjU0bC04LjI2OCA3LjEzNC42NTQuNzU4IDkuNzI2LTguMzk0TDEzLjA0LjY0eiIgZmlsbD0iI2ZmZiIvPjwvc3ZnPg==);
+}

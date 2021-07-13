@@ -1,10 +1,10 @@
-@mixin button($backgroundColor) {
+@mixin button($backgroundColor, $border-color) {
   width: 186px;
   height: 60px;
   font-weight: 300;
   background: #191414;
   color: white;
-  border-color: #191414;
+  border-color: $border-color;
   border-radius: 100px;
   text-decoration: none;
   display: inline-block;
@@ -26,9 +26,13 @@
 }
 
 .button-cover {
-  @include button($backgroundColor: #DC322B);
+  @include button($backgroundColor: #DC322B, $border-color: #191414);
 }
 
 .button-summary {
-  @include button($backgroundColor: white);
+  @include button($backgroundColor: white, $border-color: #191414);
+}
+
+.button-contact {
+  @include button($backgroundColor: white, $border-color: white);
 }

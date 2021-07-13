@@ -2,7 +2,7 @@
 .skills {
   text-align: center;
   height: 100vh;
-
+  background-color: #C3F0C8;
   h2 {
     @include titleH2($marginTop: 0px, $marginBottom: 70px);
     padding-top: 70px;
@@ -13,39 +13,49 @@
 // Card of skills:
 
 .card-skills {
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-  transition: 0.3s;
-  width: 351px;
-  height: 438px;
-  padding: 30px;
+  width: 371px;
+  height: 509px;
+  padding: 40px 20px;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
   border-radius: 20px;
   align-items: center;
-  background-color: #C3F0C8;
+  background-color: white;
   color: #191414;
   h4 {
-    font-size: 2.375rem;
+    font-size: 3.625rem;
     font-weight: 400;
-    line-height: 120%;
     letter-spacing: -.02em;
+    margin: 20px auto 25px;
+    /* Use this property in case necesary: word-wrap: break-word; */
   }
 }
 
 
 .card-skills:hover {
-  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+
+}
+
+.image-skills {
+    width: 100%;
+    max-width: 299px;
+    max-height: 299px;
+    height: auto;
+    display: block;
+    border-radius: 20px;
 }
 
 .rounded-p {
-    background-color: #D5F5D9;
+    background-color: white;
+    border-color: rgba(16,16,24,.12);
+    border-radius: 100px;
+    border: 1px solid #e2e2e3;
+    color: rgba(16,16,24,.6);
     width: 95px;
     padding: 0 15px;
-    border-radius: 100px;
     display: inline-flex;
     align-items: center;
     min-height: 40px;
     justify-content: center;
-
+    margin: 0;
 }

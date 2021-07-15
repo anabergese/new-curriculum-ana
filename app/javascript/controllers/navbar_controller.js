@@ -6,10 +6,10 @@ export default class extends Controller {
   connect() {
       var prevScrollpos = window.pageYOffset; // 0 a 3066
       window.addEventListener('scroll', () => {
-        var currentScrollPos = window.pageYOffset;
-        if (prevScrollpos > currentScrollPos) {
+      var currentScrollPos = window.pageYOffset;
+      if (prevScrollpos > currentScrollPos) {
         this.opacityTarget.classList.add('navbar-white');
-      } else if (prevScrollpos > currentScrollPos){
+      } else {
         this.opacityTarget.classList.remove('navbar-white');
       }
       prevScrollpos = currentScrollPos;

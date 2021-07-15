@@ -2,7 +2,8 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-
+  transform: translateY(0);
+  transition: .48s ease-in-out;
 
   img {
     cursor: pointer;
@@ -35,11 +36,9 @@
   position: fixed; /* Set the navbar to fixed position */
   width: 100%; /* Full width */
   z-index: 100;
-  transform: translateY(0);
 
-  transition: transform .48s cubic-bezier(.645,.045,.355,1),
-              background-color .48s cubic-bezier(.645,.045,.355,1),
-              -webkit-transform .48s cubic-bezier(.645,.045,.355,1);
+
+  transition: .48s ease-in-out;
 
   background-color: hsla(0,0%,100%,.8);
   backdrop-filter: blur(15px);
@@ -48,3 +47,5 @@
        color: #191414;
     }
 }
+
+

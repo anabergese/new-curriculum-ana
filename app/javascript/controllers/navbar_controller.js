@@ -4,17 +4,18 @@ export default class extends Controller {
   static targets = [ "opacity" ]
 
   connect() {
-    // this.opacityTarget.textContent = 'Hello, Stimulus!';
-    const navbar = document.querySelector('.topnav');
-    if (navbar) {
+      var prevScrollpos = window.pageYOffset; // 0 a 3066
       window.addEventListener('scroll', () => {
-        if (window.scrollY >= window.innerHeight) {
-          navbar.classList.add('navbar-lewagon-white');
-        } else {
-          navbar.classList.remove('navbar-lewagon-white');
-        }
-      });
-    }
+        var currentScrollPos = window.pageYOffset;
+        if (prevScrollpos > currentScrollPos) {
+        this.opacityTarget.classList.add('navbar-white');
+      } else if (prevScrollpos > currentScrollPos){
+        this.opacityTarget.classList.remove('navbar-white');
+      }
+      prevScrollpos = currentScrollPos;
+    });
   }
 }
+// prevScrollpos >= currentScrollPos = show navbar with new class;
+//  5...4...3...2...1....0
 

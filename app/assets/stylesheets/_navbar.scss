@@ -25,3 +25,19 @@
   }
 
 }
+
+
+// Javascripts tests
+
+.navbar-lewagon-white {
+  position: fixed; /* Set the navbar to fixed position */
+  top: 0; /* Position the navbar at the top of the page */
+  width: 100%; /* Full width */
+  z-index: 100;
+  transition: 0.5s opacity ease;
+  background-color: hsla(0,0%,100%,.8);
+  backdrop-filter: blur(15px);
+    a {
+       color: #191414;
+    }
+}

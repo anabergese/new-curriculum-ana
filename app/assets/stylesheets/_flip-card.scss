@@ -1,0 +1,36 @@
+// CSS For flip-card of the Skills section:
+
+.flip-card {
+  background-color: transparent;
+  width: 371px;
+  height: 509px;
+}
+
+
+.flip-card-inner {
+  position: relative;
+  width: 371px;
+  height: 509px;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.flip-card-back {
+  transform: rotateY(180deg);
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 150%;
+  ul {
+    list-style: none;
+  }
+}

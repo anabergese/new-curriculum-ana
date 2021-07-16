@@ -40,8 +40,11 @@
     width: 100%;
     max-width: 299px;
     max-height: 299px;
+    min-width: 299px;
+    min-height: 299px;
     height: auto;
     display: block;
+    background-size: cover;
     border-radius: 20px;
 }
 

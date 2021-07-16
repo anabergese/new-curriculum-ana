@@ -19,3 +19,4 @@ export default class extends Controller {
 // prevScrollpos >= currentScrollPos = show navbar with new class;
 //  5...4...3...2...1....0
 
+

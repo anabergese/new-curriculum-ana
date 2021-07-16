@@ -1,7 +1,8 @@
 @import "summary";
 .education {
   height: 100vh;
-  background-color: #ffcdd2;
+  // background-color: #ffcdd2;
+  background-color: white;
 
   h2 {
     @include titleH2($marginTop: 0px, $marginBottom: 70px);
@@ -10,7 +11,6 @@
     text-align: center;
   }
 }
-
 
 // Card of education:
 

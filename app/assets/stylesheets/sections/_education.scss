@@ -2,7 +2,7 @@
 .education {
   height: 100vh;
   // background-color: #ffcdd2;
-  background-color: white;
+  background-color: transparent;
 
   h2 {
     @include titleH2($marginTop: 0px, $marginBottom: 70px);

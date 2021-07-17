@@ -2,7 +2,7 @@
 .jobs {
   text-align: center;
   height: 100vh;
-  background-color: white;
+  background-color: transparent;
   color: #191414;
   h2 {
     @include titleH2($marginTop: 0px, $marginBottom: 70px);

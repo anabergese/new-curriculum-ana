@@ -21,31 +21,49 @@ export default class extends Controller {
       //   prevScrollpos = currentScrollPos;
       // });
 
+      const projects = this.colorTarget;
+      const jobs = document.querySelector(".jobs").offsetTop;
+      const topEducation = document.querySelector(".education").offsetTop;
+      let topOfProjects = projects.offsetTop;
+      var prevScrollpos = window.pageYOffset;
+
+      function changeColor() {
+        var currentScrollPos = window.pageYOffset;
+        if (topOfProjects <= currentScrollPos ) {
+          document.body.style.backgroundColor = "";
+          document.body.classList.add('background-color');
+        } else if (topEducation < currentScrollPos) {
+          // document.body.style.backgroundColor = "";
+          // document.body.style.backgroundColor = "white";
+          console.log("pasé el top of jobs");
+          console.log(topEducation);
+          console.log(`Top of jobs: ${jobs}. currentScrollPos: ${currentScrollPos}`);
+        } else {
+          console.log("nose donde estoy");
+        }
+      }
+
+    window.addEventListener('scroll', changeColor);
+
     };
 }
 
 // cuando el scroll alcance el top de projects section cambiar el backgrpond body color to blue;
-  // const nav = this.colorTarget;
-  // let topOfNav = nav.offsetTop;
 
-  //   function fixNav() {
-  //     if (window.scrollY >= topOfNav) {
-  //       document.body.style.paddingTop = nav.offsetHeight + 'px';
-  //       document.body.classList.add('fixed-nav');
-  //     } else {
-  //       document.body.classList.remove('fixed-nav');
-  //       document.body.style.paddingTop = 0;
-  //     }
+  // const projects = this.colorTarget;
+  // let topOfProjects = projects.offsetTop;
+  // var prevScrollpos = window.pageYOffset;
+  //   function changeColor() {
+  //       var currentScrollPos = window.pageYOffset;
+    //     if (topOfProjects <= currentScrollPos ) {
+    //       document.body.style.backgroundColor = "blue";
+    //     } else {
+    //       document.body.style.backgroundColor = "white";
+    //     }
   //   }
 
-  //   window.addEventListener('scroll', fixNav);
-
-// can we haver remove attribute or set attribute depending of the scroolll? ??
-
-// when mouse is in the div, change color
+  //   window.addEventListener('scroll', changeColor);
 
 // window.scrollY + window.innerHeight = nos da el margen botton de dónde estamos en la página.
 // colortarget.height / 2 = vamos a estar a la mitad de la altura del elemento para que se aplique la funcion en este momento.
 
-// si yo hago los background de las sections transparents y luego,
-// cambio el background del body con el scroll

@@ -1,7 +1,7 @@
 import { Controller } from "stimulus"
 import Swiper from 'swiper';
 // core version + navigation, pagination modules:
-import SwiperCore, { Pagination, Navigation, Virtual } from 'swiper/core';
+import SwiperCore, { Navigation, Virtual } from 'swiper/core';
 
 // configure Swiper to use modules
 // SwiperCore.use([Navigation, Pagination]);
@@ -15,20 +15,8 @@ export default class extends Controller {
       loop: true,
       slidesPerView: 3,
       centeredSlides: true,
-      spaceBetween: 30,
+      // spaceBetween: 0,
 
-
-      // If we need pagination
-      pagination: {
-        el: '.swiper-pagination',
-        type: 'fraction',
-      },
-
-      // Navigation arrows
-      navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
-      },
       virtual: {
           slides: (function () {
             const slides = [];

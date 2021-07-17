@@ -9,48 +9,31 @@ import SwiperCore, { Pagination, Navigation, Virtual } from 'swiper/core';
 export default class extends Controller {
 
   connect() {
-    // new Swiper('.swiper-container', {
-    //   // Optional parameters
-    //   direction: 'horizontal',
-    //   loop: true,
-    //   slidesPerView: 3,
-    //   centeredSlides: true,
-    //   spaceBetween: 30,
+    new Swiper('.swiper-container-jobs', {
+      // Optional parameters
+      direction: 'horizontal',
+      loop: true,
+      slidesPerView: 3,
+      centeredSlides: true,
 
+      // Navigation arrows
+      navigation: {
+        nextEl: '.swiper-button-next-jobs',
+        prevEl: '.swiper-button-prev-jobs',
+      },
 
-    //   // If we need pagination
-    //   pagination: {
-    //     el: '.swiper-pagination',
-    //     type: 'fraction',
-    //   },
-
-    //   // Navigation arrows
-    //   navigation: {
-    //     nextEl: '.swiper-button-next',
-    //     prevEl: '.swiper-button-prev',
-    //   },
-    //   virtual: {
-    //       slides: (function () {
-    //         const slides = [];
-    //         for (var i = 0; i < 600; i += 1) {
-    //           slides.push('Slide ' + (i + 1));
-    //         }
-    //         return slides;
-    //       })(),
-    //     },
-
-    //   // And if we need scrollbar
-    //   scrollbar: {
-    //     el: '.swiper-scrollbar',
-    //   },
-    // });
-
-
-
+      virtual: {
+          slides: (function () {
+            const slides = [];
+            for (var i = 0; i < 600; i += 1) {
+              slides.push('Slide ' + (i + 1));
+            }
+            return slides;
+          })(),
+        }
+    });
   }
 }
-
-
 
       // const swiper = new Swiper('.swiper-container', {
       //   slidesPerView: 3,

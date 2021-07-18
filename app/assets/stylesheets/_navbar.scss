@@ -6,7 +6,14 @@
   transition: .48s ease-in-out;
   padding: 20px 30px;
 
-/* Style the links inside the navigation bar */
+  .img-navbar {
+    background-image: url(https://img.icons8.com/ios/32/ffffff/mesh.png);
+    width: 32px;
+    height: 32px;
+    background-size: cover;
+  }
+
+  /* Style the links inside the navigation bar */
 
   a {
     color: #f2f2f2;
@@ -32,18 +39,23 @@
 
 .navbar-white {
   position: fixed; /* Set the navbar to fixed position */
-  width: 100%; /* Full width */
+  width: 96vw; /* Full width */
   z-index: 100;
-
-
-  transition: .48s ease-in-out;
-
   background-color: hsla(0,0%,100%,.8);
   backdrop-filter: blur(15px);
 
     a {
        color: #191414;
+
+        &:hover {
+          color: rgba(16,16,24,.6);
+        }
     }
+
+    .img-navbar {
+    background-image: url(https://img.icons8.com/ios/32/191414/mesh.png);
+  }
+
 }
 
 

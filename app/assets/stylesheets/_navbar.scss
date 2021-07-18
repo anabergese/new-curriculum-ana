@@ -2,8 +2,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  transform: translateY(0);
-  transition: .48s ease-in-out;
+  transition: .48s ease-out;
   padding: 20px 30px;
 
   .img-navbar {
@@ -38,6 +37,9 @@
 // Change navbar opacity when scroll up:
 
 .navbar-white {
+  // transform: translateY(0);
+  transition-timing-function: ease-out;
+  transition-duration: 500ms;
   position: fixed; /* Set the navbar to fixed position */
   width: 96vw; /* Full width */
   z-index: 100;

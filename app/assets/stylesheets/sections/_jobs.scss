@@ -17,6 +17,7 @@
   width: 351px;
   height: 438px;
   padding: 30px;
+  margin: 8px 0px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -47,9 +48,8 @@
 
 // Style for the carousel of jobs section:
 
-
 .swiper-container {
-  width: 100%;
+  // width: 100%;
   height: 532px;
   margin: 20px auto;
 }
@@ -59,7 +59,6 @@
   font-size: 18px;
   background: transparent;
   margin: 0;
-
   /* Center slide text vertically */
   display: -webkit-box;
   display: -ms-flexbox;
@@ -76,38 +75,42 @@
 }
 
 
+// Buttons of carousel:
+
 .swiper-button-next {
     position: absolute;
     top: 43%;
     left: 71%;
-    background-color: yellow;
-    color: white;
-    width: calc(var(--swiper-navigation-size)/ 44 * 27);
-    height: var(--swiper-navigation-size);
-    margin-top: calc(0px - (var(--swiper-navigation-size)/ 2));
+    border-radius: 50%;
+    border-color: #191414;
+    border-width: thin;
+    width: 60px;
+    height: 60px;
+    background-repeat: no-repeat;
+    background-position: 50%;
+    background-color: white;
+    background-image: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjMiIGhlaWdodD0iMTgiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZD0iTTEzLjA0LjY0bC0uNjUyLjc1OCA4LjI2NiA3LjEwOEguMDAxdjFoMjAuNjU0bC04LjI2OCA3LjEzNC42NTQuNzU4IDkuNzI2LTguMzk0TDEzLjA0LjY0eiIgZmlsbD0iIzE5MTQxNCIvPjwvc3ZnPg==);
     z-index: 10;
     cursor: pointer;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: var(--swiper-navigation-color,var(--swiper-theme-color));
 }
 
 .swiper-button-prev {
+    border-radius: 50%;
+    border-color: #191414;
+    border-width: thin;
+    width: 60px;
+    height: 60px;
+    background-repeat: no-repeat;
+    background-position: 50%;
     position: absolute;
     top: 43%;
     left: 22%;
-    background-color: yellow;
-    color: white;
-    width: calc(var(--swiper-navigation-size)/ 44 * 27);
-    height: var(--swiper-navigation-size);
-    margin-top: calc(0px - (var(--swiper-navigation-size)/ 2));
+    background-color: white;
+    background-image: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjMiIGhlaWdodD0iMTgiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZD0iTTEzLjA0LjY0bC0uNjUyLjc1OCA4LjI2NiA3LjEwOEguMDAxdjFoMjAuNjU0bC04LjI2OCA3LjEzNC42NTQuNzU4IDkuNzI2LTguMzk0TDEzLjA0LjY0eiIgZmlsbD0iIzE5MTQxNCIvPjwvc3ZnPg==);
     z-index: 10;
     cursor: pointer;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: var(--swiper-navigation-color,var(--swiper-theme-color));
+    transform: rotate(180deg);
+
 }
 
 

@@ -20,10 +20,16 @@
   // }
 }
 
+.contact-footer {
+  padding-top: 300px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: auto 60px;
 
-.flaticon {
-  text-decoration: none;
-  color: white;
-  font-size: 16px;
+  a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+  }
 }
-

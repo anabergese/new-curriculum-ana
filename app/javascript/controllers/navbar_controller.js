@@ -21,3 +21,8 @@ export default class extends Controller {
     });
   }
 }
+
+
+
+// un boton que al hacer click haga un scrool hasta el top de la navbar que es 0:
+// document.querySelector(".topnav").offsetTop; == window.pageYOffset; == 0

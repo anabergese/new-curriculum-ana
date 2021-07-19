@@ -2,8 +2,15 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  transition: .48s ease-out;
   padding: 20px 30px;
+  position: relative;
+
+  transition-timing-function: ease;
+  transition-duration: 1500ms;
+  animation-name: movezero;
+  animation-duration: 5s;
+  animation-fill-mode: both;
+  animation-iteration-count: 1;
 
   .img-navbar {
     background-image: url(https://img.icons8.com/ios/32/ffffff/mesh.png);
@@ -38,13 +45,18 @@
 
 .navbar-white {
   // transform: translateY(0);
-  transition-timing-function: ease-out;
-  transition-duration: 500ms;
   position: fixed; /* Set the navbar to fixed position */
   width: 96vw; /* Full width */
   z-index: 100;
   background-color: hsla(0,0%,100%,.8);
   backdrop-filter: blur(15px);
+
+  transition-timing-function: ease;
+  transition-duration: 1500ms;
+  animation-name: movetop;
+  animation-duration: 2s;
+  animation-fill-mode: both;
+  animation-iteration-count: 1;
 
     a {
         color: #191414;
@@ -59,5 +71,17 @@
     }
 
 }
+
+
+  @keyframes movetop {
+    from { transform: translateY(-72px)}
+    to {transform: translateY(0)}
+  }
+
+  @keyframes movezero {
+    from { transform: translateY(0px)}
+    to {transform: translateY(-72)}
+  }
+
 
 

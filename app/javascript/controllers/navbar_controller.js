@@ -10,14 +10,20 @@ export default class extends Controller {
       window.addEventListener('scroll', () => {
       var currentScrollPos = window.pageYOffset;
       if (prevScrollpos < currentScrollPos) {
+        this.opacityTarget.style.animationName = "movezero";
         this.opacityTarget.classList.remove('navbar-white');
+
       } else if (currentScrollPos == 0 && topOfNav == 0) {
+        this.opacityTarget.style.animationName = "movezero";
         this.opacityTarget.classList.remove('navbar-white');
+
       } else if (prevScrollpos > currentScrollPos) {
         this.opacityTarget.classList.add('navbar-white');
+        this.opacityTarget.style.animationName = "movetop";
       }
 
       prevScrollpos = currentScrollPos;
+
     });
   }
 }

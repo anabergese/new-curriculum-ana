@@ -37,4 +37,19 @@
 .cover-top-left {
   flex-grow: 1;
   margin-left: 50px;
+
+  .chats {
+    border-color: white;
+    border-width: 1px;
+    background-color: black;
+    color: white;
+    width: 172px;
+    height: 72px;
+    border-radius: 20px;
+    position: relative;
+    left: 180px;
+    text-align: center;
+    padding-top: 32px;
+
+  }
 }

@@ -12,11 +12,11 @@ export default class extends Controller {
 
       function movething() {
 
-        currentpos += 3;
+        currentpos += 2;
         img.style.left = currentpos + "px";
 
-        if ( Math.abs(currentpos >= 900)) {
-          currentpos = -1000;
+        if ( Math.abs(currentpos >= 500)) {
+          currentpos = -900;
         }
 
         window.requestAnimationFrame(movething);
@@ -29,9 +29,6 @@ export default class extends Controller {
 
     }
 
-    // Ex.: to replace the contect of the selected HTML element:
-    // this.outputTarget.textContent = 'Hello, Stimulus!'
-    // Remember to create this file with the name of the data-controller
   }
 
 

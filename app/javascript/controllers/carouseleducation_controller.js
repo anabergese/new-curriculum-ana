@@ -1,10 +1,10 @@
 import { Controller } from "stimulus"
 import Swiper from 'swiper';
 // core version + navigation, pagination modules:
-import SwiperCore, { Navigation, Virtual } from 'swiper/core';
+import SwiperCore, { Pagination, Navigation, Virtual } from 'swiper/core';
 
 // configure Swiper to use modules
-// SwiperCore.use([Navigation, Pagination]);
+SwiperCore.use([Navigation, Pagination]);
 
 export default class extends Controller {
 

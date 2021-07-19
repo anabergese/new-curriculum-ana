@@ -4,23 +4,27 @@ import Swiper from 'swiper';
 import SwiperCore, { Pagination, Navigation, Virtual } from 'swiper/core';
 
 // configure Swiper to use modules
-// SwiperCore.use([Navigation, Pagination]);
+SwiperCore.use([Navigation, Pagination]);
 
 export default class extends Controller {
 
   connect() {
     new Swiper('.swiper-container-jobs', {
       // Optional parameters
+
       direction: 'horizontal',
-      loop: true,
       slidesPerView: 3,
-      centeredSlides: true,
+      loop:true,
+      simulateTouch: false,
       spaceBetween: 600,
 
+      // pagination: '.swiper-pagination',
+      // paginationClickable: true,
       navigation: {
-          nextEl: '.swiper-button-next',
-          prevEl: '.swiper-button-prev',
+          nextEl: '.swiper-button-next-jobs',
+          prevEl: '.swiper-button-prev-jobs',
       },
+
 
       virtual: {
           slides: (function () {

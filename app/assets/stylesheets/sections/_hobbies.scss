@@ -13,6 +13,11 @@
   }
 }
 
+.hobbies img {
+  border-radius: 20px;
+  position: relative;
+  left: 0px;
+}
 
 .hobbies-top {
   margin: auto 420px;
@@ -53,3 +58,19 @@
       height: 140px;
     }
 }
+
+
+
+// Animate hobbies row
+// .hobbies-row {
+//   left: 0px;
+//   animation-name: drive;
+//   animation-duration: 30s;
+//   animation-fill-mode: both;
+//   animation-iteration-count: infinite;
+// }
+
+// @keyframes drive {
+//   from{ transform: translateX(-1000px) }
+//   to{ transform: translateX(2000px) }
+// }

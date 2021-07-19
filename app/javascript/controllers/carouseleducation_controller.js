@@ -15,7 +15,7 @@ export default class extends Controller {
       loop: true,
       slidesPerView: 3,
       centeredSlides: true,
-      // spaceBetween: 0,
+
 
       virtual: {
           slides: (function () {
@@ -33,35 +33,6 @@ export default class extends Controller {
       },
     });
 
-
-
   }
 }
-
-
-
-      // const swiper = new Swiper('.swiper-container', {
-      //   slidesPerView: 3,
-      //   centeredSlides: true,
-      //   spaceBetween: 30,
-
-      //   pagination: {
-      //     el: '.swiper-pagination',
-      //     type: 'fraction',
-      //   },
-
-      //   navigation: {
-      //     nextEl: '.swiper-button-next',
-      //     prevEl: '.swiper-button-prev',
-      //   },
-      //   virtual: {
-      //     slides: (function () {
-      //       const slides = [];
-      //       for (var i = 0; i < 600; i += 1) {
-      //         slides.push('Slide ' + (i + 1));
-      //       }
-      //       return slides;
-      //     })(),
-      //   },
-      // });
 

@@ -15,11 +15,11 @@ export default class extends Controller {
       loop: true,
       slidesPerView: 3,
       centeredSlides: true,
+      spaceBetween: 600,
 
-      // Navigation arrows
       navigation: {
-        nextEl: '.swiper-button-next-jobs',
-        prevEl: '.swiper-button-prev-jobs',
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
       },
 
       virtual: {
@@ -30,7 +30,12 @@ export default class extends Controller {
             }
             return slides;
           })(),
-        }
+        },
+
+      // And if we need scrollbar
+      scrollbar: {
+        el: '.swiper-scrollbar',
+      },
     });
   }
 }

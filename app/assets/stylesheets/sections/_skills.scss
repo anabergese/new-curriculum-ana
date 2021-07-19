@@ -2,7 +2,7 @@
 .skills {
   text-align: center;
   height: 100vh;
-  background-color: #ffcdd2;
+  background-color: #191414;
   color: #191414;
 }
 
@@ -23,7 +23,7 @@
   padding: 40px 20px;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
   border-radius: 20px;
   background-color: white;
@@ -48,4 +48,5 @@
     display: block;
     background-size: cover;
     border-radius: 20px;
+    margin-top: 18px;
 }

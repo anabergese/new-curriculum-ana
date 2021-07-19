@@ -16,11 +16,11 @@
 
 // Your CSS partials
 @import "sections/summary";
-@import 'swiper/swiper-bundle.css';
+
 
 
 // carousel jobs Swiper from here:
-
+@import 'swiper/swiper-bundle.css';
 @import 'swiper/swiper.scss';
 @import 'swiper/components/pagination/pagination.min.css';
 @import 'swiper/components/navigation/navigation.min.css';

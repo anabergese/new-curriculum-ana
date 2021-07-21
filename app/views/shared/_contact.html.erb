@@ -1,12 +1,11 @@
 <div class="contact" id="contact">
-  <h2>Contact me</h2>
-  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eleifend mattis ultricies. Donec vitae nibh quis arcu sodales suscipit eget nec massa. Nam in tristique tellus.</p>
-  <button class="button-contact">Write me</button>
-  <p></p>
-  <br>
-  <a href="https://github.com/anabergese" target="_blank"><%= image_tag 'github.svg', style: "width: 32px;background-color: white;padding: 2px;border-radius: 50%;text-decoration: none;"%></a>
-  <a href="https://www.linkedin.com/in/anabergese/" target="_blank"><%= image_tag 'linkedin.svg', style: "width: 32px;background-color: white;padding: 2px;border-radius: 50%;text-decoration: none;"%></a>
-
+  <div class="contact-top">
+    <button class="button-contact">Talk to me</button>
+    <div>
+      <a href="https://github.com/anabergese" target="_blank"><%= image_tag 'github.svg', class: "links-contact"%></a>
+      <a href="https://www.linkedin.com/in/anabergese/" target="_blank"><%= image_tag 'linkedin.svg', class: "links-contact"%></a>
+    </div>
+  </div>
 
   <footer class="contact-footer">
     <!-- Iconos mention: -->
@@ -16,6 +15,4 @@
     <a href="https://icons8.com/icon/14956/comedy" target="_blank">Comedy icon by Icons8</a>
     <button class="button-scroll-to-top" data-controller="buttontotop" data-buttontotop-target="btn"></button>
   </footer>
-
-
 </div>

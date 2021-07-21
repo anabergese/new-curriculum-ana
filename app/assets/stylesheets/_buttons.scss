@@ -6,6 +6,7 @@
   color: white;
   border-color: $border-color;
   border-radius: 100px;
+  border-width: 5px;
   text-decoration: none;
   display: inline-block;
   position: relative;
@@ -25,13 +26,6 @@
 
 }
 
-.button-cover {
-  @include button($backgroundColor: #DC322B, $border-color: #191414);
-}
-
-.button-summary {
-  @include button($backgroundColor: white, $border-color: #191414);
-}
 
 // Buttons project section:
 
@@ -65,14 +59,30 @@
 // Buttons contact section:
 
 .button-contact {
-  @include button($backgroundColor: white, $border-color: white);
+  width: 186px;
+  height: 60px;
+  font-weight: 300;
+  background: #191414;
+  color: white;
+  border: 1px solid white;
+  border-radius: 100px;
+  text-decoration: none;
+  font-size: 18px;
+
+  &:hover {
+    background-color: white;
+    color: #191414;
+    border-color: #191414;
+    border-width: 1px;
+    cursor: pointer;
+  }
 }
 
 
 .button-scroll-to-top {
   transform: rotate(-90deg);
-  background-color: #fff;
-  border: 1px solid #fff;
+  background-color: white;
+  border: 1px solid white;
   border-radius: 50%;
   width: 60px;
   height: 60px;
@@ -85,6 +95,6 @@
 
 .button-scroll-to-top:hover {
   background-color: #191414;
-  border: 1px solid #fff;
+  border: 1px solid white;
   background-image: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjMiIGhlaWdodD0iMTgiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZD0iTTEzLjA0LjY0bC0uNjUyLjc1OCA4LjI2NiA3LjEwOEguMDAxdjFoMjAuNjU0bC04LjI2OCA3LjEzNC42NTQuNzU4IDkuNzI2LTguMzk0TDEzLjA0LjY0eiIgZmlsbD0iI2ZmZiIvPjwvc3ZnPg==);
 }

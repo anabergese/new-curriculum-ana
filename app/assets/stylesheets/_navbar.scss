@@ -5,12 +5,6 @@
   padding: 20px 30px;
   position: relative;
 
-  transition-timing-function: ease;
-  transition-duration: 1500ms;
-  animation-name: movezero;
-  animation-duration: 5s;
-  animation-fill-mode: both;
-  animation-iteration-count: 1;
 
   .img-navbar {
     background-image: url(https://img.icons8.com/ios/32/ffffff/mesh.png);
@@ -51,10 +45,11 @@
   background-color: hsla(0,0%,100%,.8);
   backdrop-filter: blur(15px);
 
-  transition-timing-function: ease;
-  transition-duration: 1500ms;
-  animation-name: movetop;
-  animation-duration: 2s;
+  transition-timing-function: ease-out;
+  transition-duration: 500ms;
+  animation-name: shownav;
+  animation-name: hidenav;
+  animation-duration: 0.4s;
   animation-fill-mode: both;
   animation-iteration-count: 1;
 
@@ -73,14 +68,14 @@
 }
 
 
-  @keyframes movetop {
+  @keyframes shownav {
     from { transform: translateY(-72px)}
-    to {transform: translateY(0)}
+    to {transform: translateY(0px)}
   }
 
-  @keyframes movezero {
+  @keyframes hidenav {
     from { transform: translateY(0px)}
-    to {transform: translateY(-72)}
+    to {transform: translateY(-72px)}
   }
 
 

@@ -2,6 +2,6 @@ class CoverController < ApplicationController
   def about
   end
 
-  def experiences
+  def advertiser
   end
 end

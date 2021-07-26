@@ -33,12 +33,13 @@
     border-radius: 50%;
     width: 60px;
     height: 60px;
-    background-repeat: no-repeat;
-    background-position: 50%;
     cursor: pointer;
     background-color: #191414;
     border: 1px solid #191414;
-    background-image: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjMiIGhlaWdodD0iMTgiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZD0iTTEzLjA0LjY0bC0uNjUyLjc1OCA4LjI2NiA3LjEwOEguMDAxdjFoMjAuNjU0bC04LjI2OCA3LjEzNC42NTQuNzU4IDkuNzI2LTguMzk0TDEzLjA0LjY0eiIgZmlsbD0iI2ZmZiIvPjwvc3ZnPg==);
+    background-image: url("right-arrow-white.svg");
+    background-size: 25px;
+    background-repeat: no-repeat;
+    background-position: 50%;
 }
 
 
@@ -50,10 +51,10 @@
       background-color: white;
       transition: background-color .4s, border-color .4s;
       margin-right: 16px;
-      background-image: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjMiIGhlaWdodD0iMTgiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZD0iTTEzLjA0LjY0bC0uNjUyLjc1OCA4LjI2NiA3LjEwOEguMDAxdjFoMjAuNjU0bC04LjI2OCA3LjEzNC42NTQuNzU4IDkuNzI2LTguMzk0TDEzLjA0LjY0eiIgZmlsbD0iIzE5MTQxNCIvPjwvc3ZnPg==);
+      background-image: url("right-arrow.svg");
+      background-size: 25px;
     }
   }
-
 
 
 // Buttons contact section:
@@ -80,21 +81,38 @@
 
 
 .button-scroll-to-top {
-  transform: rotate(-90deg);
   background-color: white;
   border: 1px solid white;
   border-radius: 50%;
   width: 60px;
   height: 60px;
   cursor: pointer;
+  background-image: url("up-arrow.svg");
   background-repeat: no-repeat;
   background-position: 50%;
-  background-image: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjMiIGhlaWdodD0iMTgiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZD0iTTEzLjA0LjY0bC0uNjUyLjc1OCA4LjI2NiA3LjEwOEguMDAxdjFoMjAuNjU0bC04LjI2OCA3LjEzNC42NTQuNzU4IDkuNzI2LTguMzk0TDEzLjA0LjY0eiIgZmlsbD0iIzE5MTQxNCIvPjwvc3ZnPg==);
+  background-size: 25px;
 }
 
 
 .button-scroll-to-top:hover {
   background-color: #191414;
   border: 1px solid white;
-  background-image: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjMiIGhlaWdodD0iMTgiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZD0iTTEzLjA0LjY0bC0uNjUyLjc1OCA4LjI2NiA3LjEwOEguMDAxdjFoMjAuNjU0bC04LjI2OCA3LjEzNC42NTQuNzU4IDkuNzI2LTguMzk0TDEzLjA0LjY0eiIgZmlsbD0iI2ZmZiIvPjwvc3ZnPg==);
+  background-image: url("up-arrow-white.svg");
+  background-size: 25px;
+}
+
+
+
+/// Advertiser JOBS DESCRPIPTion
+.button-back {
+  background-color: #191414;
+  border: 1px solid #191414;
+  border-radius: 40px;
+  cursor: pointer;
+  width: 60px;
+  height: 60px;
+
+  img {
+    width:30px;
+  }
 }

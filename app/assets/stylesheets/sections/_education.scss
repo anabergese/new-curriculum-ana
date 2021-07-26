@@ -33,7 +33,6 @@
   }
 }
 
-
 .rounded-p-education {
     background-color: #064F40;
     width: 95px;
@@ -43,15 +42,20 @@
     align-items: center;
     min-height: 40px;
     justify-content: center;
-
 }
 
 
+.education-description {
+  font-size: 16px;
+  color: hsla(0,0%,100%,.8);
+}
+
 // Button see more in card-education
-.see-more {
+.date-info {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  font-size: 12px;
 }
 
 .btn-see-more {
@@ -64,7 +68,7 @@
   background: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTciIGhlaWdodD0iMTMiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZD0iTTguODYyLjExMmwtLjY1NC43NTdMMTQuMTU1IDZIMHYxaDE0LjE1M2wtNS45NDQgNS4xMTEuNjUyLjc1OSA3LjQwNi02LjM2OEw4Ljg2Mi4xMTJ6IiBmaWxsPSIjMDAwIi8+PC9zdmc+) no-repeat 50% #fff;
   background-size: 16px 12px;
   border-radius: 50%;
-  }
+}
 
 
 // Stile for carousel of education:

@@ -8,6 +8,14 @@
   h2 {
     @include titleH2($marginTop: 200px, $marginBottom: 50px);
   }
+
+  a {
+      text-decoration: none;
+
+      &:visited {
+          color: #191414;
+      }
+    }
 }
 
 

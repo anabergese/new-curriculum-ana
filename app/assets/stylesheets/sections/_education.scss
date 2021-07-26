@@ -1,7 +1,6 @@
 @import "summary";
 .education {
   height: 100vh;
-
   // background-color: #ffcdd2;
   background-color: transparent;
 
@@ -48,9 +47,7 @@
 }
 
 
-
 // Button see more in card-education
-
 .see-more {
   display: flex;
   align-items: center;
@@ -70,12 +67,8 @@
   }
 
 
-
-
-  // Stile for carousel of education:
-
-  .swiper-container {
-  width: 100%;
+// Stile for carousel of education:
+.swiper-container {
   height: 532px;
   margin: 20px auto;
 }
@@ -101,5 +94,4 @@
 }
 
 
-// Finished carousel jobs Swiper.
 

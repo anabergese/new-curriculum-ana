@@ -10,55 +10,19 @@ export default class extends Controller {
 
   connect() {
     new Swiper('.swiper-container-jobs', {
-      // Optional parameters
-
+      // Optional parameters:
       direction: 'horizontal',
       slidesPerView: 3,
       loop:true,
       simulateTouch: false,
       spaceBetween: 600,
 
-      // pagination: '.swiper-pagination',
-      // paginationClickable: true,
       navigation: {
           nextEl: '.swiper-button-next-jobs',
           prevEl: '.swiper-button-prev-jobs',
       },
 
-
-      virtual: {
-          slides: (function () {
-            const slides = [];
-            for (var i = 0; i < 600; i += 1) {
-              slides.push('Slide ' + (i + 1));
-            }
-            return slides;
-          })(),
-        },
-
-      // And if we need scrollbar
-      scrollbar: {
-        el: '.swiper-scrollbar',
-      },
-    });
-  }
-}
-
-      // const swiper = new Swiper('.swiper-container', {
-      //   slidesPerView: 3,
-      //   centeredSlides: true,
-      //   spaceBetween: 30,
-
-      //   pagination: {
-      //     el: '.swiper-pagination',
-      //     type: 'fraction',
-      //   },
-
-      //   navigation: {
-      //     nextEl: '.swiper-button-next',
-      //     prevEl: '.swiper-button-prev',
-      //   },
-      //   virtual: {
+      // virtual: {
       //     slides: (function () {
       //       const slides = [];
       //       for (var i = 0; i < 600; i += 1) {
@@ -67,5 +31,7 @@ export default class extends Controller {
       //       return slides;
       //     })(),
       //   },
-      // });
+    });
+  }
+}
 

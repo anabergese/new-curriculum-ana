@@ -26,9 +26,7 @@
 
 }
 
-
 // Buttons project section:
-
 .button-projects {
     border-radius: 50%;
     width: 60px;
@@ -43,22 +41,21 @@
 }
 
 
-  .project-links:hover {
-    border-color: #191414;
-    transition: border-color .25s ease;
+.project-links:hover {
+  border-color: #191414;
+  transition: border-color .25s ease;
 
-    .button-projects {
-      background-color: white;
-      transition: background-color .4s, border-color .4s;
-      margin-right: 16px;
-      background-image: url("right-arrow.svg");
-      background-size: 25px;
-    }
+  .button-projects {
+    background-color: white;
+    transition: background-color .4s, border-color .4s;
+    margin-right: 16px;
+    background-image: url("right-arrow.svg");
+    background-size: 25px;
   }
+}
 
 
 // Buttons contact section:
-
 .button-contact {
   width: 186px;
   height: 60px;
@@ -91,19 +88,17 @@
   background-repeat: no-repeat;
   background-position: 50%;
   background-size: 25px;
+
+  &:hover {
+    background-color: #191414;
+    border: 1px solid white;
+    background-image: url("up-arrow-white.svg");
+    background-size: 25px;
+  }
 }
 
 
-.button-scroll-to-top:hover {
-  background-color: #191414;
-  border: 1px solid white;
-  background-image: url("up-arrow-white.svg");
-  background-size: 25px;
-}
-
-
-
-/// Advertiser JOBS DESCRPIPTion
+/// Button Jobs Description Sections:
 .button-back {
   background-color: #191414;
   border: 1px solid #191414;

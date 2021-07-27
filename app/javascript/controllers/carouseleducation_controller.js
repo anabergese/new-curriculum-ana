@@ -4,7 +4,7 @@ import Swiper from 'swiper';
 import SwiperCore, { Pagination, Navigation } from 'swiper/core';
 
 // configure Swiper to use modules
-SwiperCore.use([Navigation, Pagination]);
+SwiperCore.use([Pagination]);
 
 export default class extends Controller {
 

@@ -6,9 +6,7 @@
   color: #191414;
 }
 
-
 // Cards of skills:
-
 .cards-skills {
   display: flex;
   justify-content: space-between;
@@ -37,19 +35,17 @@
     margin: 20px auto 25px;
     /* Use this property in case necesary: word-wrap: break-word; */
   }
-
 }
 
-
 .image-skills {
-    width: 100%;
-    max-width: 200px;
-    max-height: 200px;
-    min-width: 200px;
-    min-height: 200px;
-    height: auto;
-    display: block;
-    background-size: cover;
-    border-radius: 20px;
-    margin-top: 18px;
+  width: 100%;
+  max-width: 132px;
+  max-height: 132px;
+  min-width: 132px;
+  min-height: 132px;
+  height: auto;
+  display: block;
+  background-size: cover;
+  border-radius: 20px;
+  margin-top: 18px;
 }

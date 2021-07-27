@@ -18,7 +18,7 @@
 
 .cover-top {
   display: flex;
-  padding: 80px;
+  padding: 100px 140px;
   h1 {
     font-size: 100px;
     font-weight: 400;
@@ -36,5 +36,8 @@
 
 .cover-top-left {
   flex-grow: 1;
-  margin-left: 50px;
+  margin-left: 200px;
+  img {
+    width: 400px;
+  }
 }

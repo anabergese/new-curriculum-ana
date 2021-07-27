@@ -2,16 +2,13 @@
 .jobs {
   text-align: center;
   height: 100vh;
-
   background-color: transparent;
   color: #191414;
   h2 {
     @include titleH2($marginTop: 200px, $marginBottom: 50px);
   }
-
   a {
       text-decoration: none;
-
       &:visited {
           color: #191414;
       }
@@ -20,17 +17,16 @@
 
 
 // Card of jobs:
-
 .card-jobs {
-  min-width: 351px;
-  min-height: 438px;
+  width: 351px;
+  height: 438px;
   padding: 30px;
   margin: 8px 0px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  border-radius: 20px;
   align-items: center;
+  border-radius: 20px;
   background-color: #C3F0C8;
 
   h4 {
@@ -42,17 +38,15 @@
 }
 
 .rounded-p {
-    background-color: #D5F5D9;
-    width: 95px;
-    padding: 0 15px;
-    border-radius: 100px;
-    display: inline-flex;
-    align-items: center;
-    min-height: 40px;
-    justify-content: center;
-
+  width: 95px;
+  min-height: 40px;
+  padding: 0 15px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100px;
+  background-color: #D5F5D9;
 }
-
 
 // Style for the carousel of jobs section:
 .swiper-container-jobs {
@@ -65,53 +59,43 @@
   background: transparent;
   margin: 0;
   /* Center slide text vertically */
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  -webkit-justify-content: center;
-  justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  -webkit-align-items: center;
   align-items: center;
 }
 
 // Buttons of carousel:
 .swiper-button-next-jobs {
-    position: absolute;
-    top: 43%;
-    left: 71%;
-    border-radius: 50%;
-    border-color: #191414;
-    border-width: thin;
-    width: 60px;
-    height: 60px;
-    background-repeat: no-repeat;
-    background-position: 50%;
-    background-color: transparent;
-    background-image: url("right-arrow.svg");
-    background-size: 25px;
-    z-index: 10;
-    cursor: pointer;
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  top: 43%;
+  left: 71%;
+  border-radius: 50%;
+  border-color: #191414;
+  border-width: thin;
+  background-repeat: no-repeat;
+  background-position: 50%;
+  background-color: transparent;
+  background-image: url("right-arrow.svg");
+  background-size: 25px;
+  z-index: 10;
+  cursor: pointer;
 }
 
 .swiper-button-prev-jobs {
-    position: absolute;
-    border-radius: 50%;
-    border-color: #191414;
-    border-width: thin;
-    width: 60px;
-    height: 60px;
-    background-repeat: no-repeat;
-    background-position: 50%;
-    top: 43%;
-    left: 22%;
-    background-color: transparent;
-    background-image: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjMiIGhlaWdodD0iMTgiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZD0iTTEzLjA0LjY0bC0uNjUyLjc1OCA4LjI2NiA3LjEwOEguMDAxdjFoMjAuNjU0bC04LjI2OCA3LjEzNC42NTQuNzU4IDkuNzI2LTguMzk0TDEzLjA0LjY0eiIgZmlsbD0iIzE5MTQxNCIvPjwvc3ZnPg==);
-    z-index: 10;
-    cursor: pointer;
-    transform: rotate(180deg);
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  top: 43%;
+  left: 22%;
+  border-radius: 50%;
+  border-color: #191414;
+  border-width: thin;
+  background-repeat: no-repeat;
+  background-position: 50%;
+  background-color: transparent;
+  background-image: url("right-arrow.svg");
+  background-size: 25px;
+  z-index: 10;
+  cursor: pointer;
+  transform: rotate(180deg);
 }

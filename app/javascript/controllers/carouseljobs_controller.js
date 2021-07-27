@@ -9,13 +9,15 @@ SwiperCore.use([Navigation, Pagination]);
 export default class extends Controller {
 
   connect() {
-    new Swiper('.swiper-container-jobs', {
+    new Swiper('.swiper-container', {
       // Optional parameters:
       direction: 'horizontal',
       slidesPerView: 3,
       loop:true,
       simulateTouch: false,
       spaceBetween: 600,
+      centeredSlides: true,
+
 
       navigation: {
           nextEl: '.swiper-button-next-jobs',

@@ -3,7 +3,6 @@
   text-align: center;
   height: 100vh;
   background-color: transparent;
-  color: #191414;
 }
 
 // Cards of skills:
@@ -12,6 +11,7 @@
   justify-content: space-between;
   margin: auto 100px;
   padding-top: 160px;
+
 }
 
 
@@ -27,7 +27,10 @@
   background-color: white;
   border-width: 1px;
   border-style: solid;
-  border-color: black;
+  border-color: rgba(25,20,20,.3);
+  background-color: rgba(25,20,20,.05);
+  color: black;
+
   h4 {
     font-size: 2.625rem;
     font-weight: 400;
@@ -46,6 +49,6 @@
   height: auto;
   display: block;
   background-size: cover;
-  border-radius: 20px;
+  border-radius: 100px;
   margin-top: 18px;
 }

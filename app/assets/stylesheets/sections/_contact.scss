@@ -24,9 +24,12 @@
  text-decoration: none;
  margin-left: 8px;
  margin-right: 8px;
-
+ transition-duration: 400ms;
+ transition-property: box-shadow;
    &:hover {
       box-shadow: 1px 1px 8px white;
+      transition-duration: 400ms;
+      transition-property: box-shadow;
     }
 }
 

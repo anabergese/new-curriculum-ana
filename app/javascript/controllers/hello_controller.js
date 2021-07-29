@@ -13,9 +13,13 @@ export default class extends Controller {
   static targets = [ "output" ]
 
   connect() {
-    console.log('Hello!');
+
+
     // Ex.: to replace the contect of the selected HTML element:
     // this.outputTarget.textContent = 'Hello, Stimulus!'
     // Remember to create this file with the name of the data-controller
   }
 }
+
+
+

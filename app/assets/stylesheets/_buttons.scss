@@ -38,17 +38,21 @@
     background-size: 25px;
     background-repeat: no-repeat;
     background-position: 50%;
+    transition-duration: 400ms;
+    transition-property: margin-right;
 }
 
 
 .project-links:hover {
+
   border-color: #191414;
-  transition: border-color .25s ease;
+
 
   .button-projects {
     background-color: white;
-    transition: background-color .4s, border-color .4s;
     margin-right: 16px;
+    transition-duration: 400ms;
+    transition-property: margin-right;
     background-image: url("right-arrow.svg");
     background-size: 25px;
   }

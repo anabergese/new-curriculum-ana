@@ -59,8 +59,12 @@
  border-radius: 50%;
  text-decoration: none;
  margin-right: 12px;
+ transition-duration: 400ms;
+ transition-property: box-shadow;
   &:hover {
     box-shadow: 1px 1px 8px #888888;
+    transition-duration: 400ms;
+    transition-property: box-shadow;
   }
 }
 

@@ -70,6 +70,8 @@
   border-radius: 100px;
   text-decoration: none;
   font-size: 18px;
+  transition-duration: 400ms;
+  transition-property: background-color;
 
   &:hover {
     background-color: white;
@@ -77,6 +79,8 @@
     border-color: #191414;
     border-width: 1px;
     cursor: pointer;
+    transition-duration: 400ms;
+    transition-property: background-color;
   }
 }
 
@@ -92,26 +96,15 @@
   background-repeat: no-repeat;
   background-position: 50%;
   background-size: 25px;
+  transition-duration: 400ms;
+  transition-property: background-color;
 
   &:hover {
     background-color: #191414;
     border: 1px solid white;
     background-image: url("up-arrow-white.svg");
     background-size: 25px;
-  }
-}
-
-
-/// Button Jobs Description Sections:
-.button-back {
-  background-color: #191414;
-  border: 1px solid #191414;
-  border-radius: 40px;
-  cursor: pointer;
-  width: 60px;
-  height: 60px;
-
-  img {
-    width:30px;
+    transition-duration: 400ms;
+    transition-property: background-color;
   }
 }

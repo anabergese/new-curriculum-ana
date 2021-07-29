@@ -6,7 +6,6 @@
   position: relative;
   background-color: #DC3228;
 
-
   .img-navbar {
     background-image: url("coverface.png");
     width: 32px;
@@ -24,6 +23,7 @@
     font-size: 18px;
     cursor: pointer;
 
+
     &:hover {
       color: #EAB4AE;
       transition-duration: 0.2s;
@@ -35,9 +35,7 @@
 }
 
 
-
 // Change navbar opacity when scroll up:
-
 .navbar-white {
   // transform: translateY(0);
   position: fixed; /* Set the navbar to fixed position */

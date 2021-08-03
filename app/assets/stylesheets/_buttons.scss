@@ -51,8 +51,8 @@
   .button-projects {
     background-color: white;
     margin-right: 16px;
-    transition-duration: 400ms;
-    transition-property: margin-right;
+    transition-duration: 500ms;
+    transition-property: background-color; // I need to change also margin-right
     background-image: url("right-arrow.svg");
     background-size: 25px;
   }

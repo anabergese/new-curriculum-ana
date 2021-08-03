@@ -19,6 +19,21 @@ const scrollAnimation = () => {
         if (scrollTop > curDiv.offsetTop - heightBefore) {
           const color = curDiv.getAttribute("data-color");
           document.body.style.background = color;
+
+          // Select from project section h2, p and b to change text color
+          const projectsH2 = document.querySelector(".projects h2");
+          const projectsP = document.querySelectorAll(".color-gray-400");
+          const projectsA = document.querySelectorAll(".project-links");
+
+          projectsH2.style.transitionTimingFunction = "ease";
+          projectsH2.style.transitionDelay = "2s";
+          projectsH2.style.transitionProperty = "color";
+          projectsH2.style.color = "#ffffff";
+
+          projectsP.forEach ( p =>
+            p.setAttribute( "style",
+              "transition-property: color; transition-delay: 2s; color:#ffffff;")
+          );
         }
       }
   };

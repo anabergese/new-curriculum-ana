@@ -22,3 +22,5 @@ import { scrollAnimation } from '../channels/scrollAnimation';
 document.addEventListener('turbolinks:load', () => {
   scrollAnimation();
 });
+
+

@@ -22,6 +22,7 @@ const scrollAnimation = () => {
 
           // Select from project section h2, p and b to change text color
           const projectsH2 = document.querySelector(".projects h2");
+          const educationH2 = document.querySelector(".education h2");
           const projectsP = document.querySelectorAll(".color-gray-400");
           const projectsA = document.querySelectorAll(".project-links");
 
@@ -29,6 +30,11 @@ const scrollAnimation = () => {
           projectsH2.style.transitionDelay = "2s";
           projectsH2.style.transitionProperty = "color";
           projectsH2.style.color = "#ffffff";
+
+          educationH2.style.transitionTimingFunction = "ease";
+          educationH2.style.transitionDelay = "4s";
+          educationH2.style.transitionProperty = "color";
+          educationH2.style.color = "#ffffff";
 
           projectsP.forEach ( p =>
             p.setAttribute( "style",

@@ -7,7 +7,7 @@
   background-color: #DC3228;
 
   .img-navbar {
-    background-image: url("coverface.png");
+    background-image: image-url("coverface.png");
     width: 32px;
     height: 32px;
     background-size: cover;
@@ -61,7 +61,7 @@
     }
 
     .img-navbar {
-        background-image: url("coverfaceblack.png");
+        background-image: image-url("coverfaceblack.png");
     }
 
 }

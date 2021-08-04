@@ -16,11 +16,11 @@ require("channels")
 // const imagePath = (name) => images(name, true)
 
 import "controllers"
-import { scrollAnimation } from '../channels/scrollAnimation';
+// import { scrollAnimation } from '../channels/scrollAnimation';
 
 
-document.addEventListener('turbolinks:load', () => {
-  scrollAnimation();
-});
+// document.addEventListener('turbolinks:load', () => {
+//   scrollAnimation();
+// });
 
 

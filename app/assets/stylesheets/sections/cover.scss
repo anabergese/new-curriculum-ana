@@ -1,8 +1,3 @@
-// Place all the styles related to the Cover controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: https://sass-lang.com/
-
-
 /* Image of cover */
 .cover-main {
   // background: url("https://www.lifeatspotify.com/images/1000x1000/Start-2000.jpg") no-repeat center center fixed;
@@ -15,6 +10,7 @@
   background-size: cover;
 }
 
+// transition = "property duration timing-function delay|initial|inherit"
 
 .cover-top {
   display: flex;
@@ -32,6 +28,10 @@
 
 .search-bar {
   text-align: center;
+}
+
+.cover-top-rigth {
+  // transition: font-weight 1s ease;
 }
 
 .cover-top-left {

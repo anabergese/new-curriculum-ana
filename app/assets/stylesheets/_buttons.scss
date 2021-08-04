@@ -53,7 +53,7 @@
     margin-right: 16px;
     transition-duration: 500ms;
     transition-property: background-color, margin-right;
-    background-image: url("right-arrow.svg");
+    background-image: image-url("right-arrow.svg");
     background-size: 25px;
   }
 }
@@ -92,7 +92,7 @@
   width: 60px;
   height: 60px;
   cursor: pointer;
-  background-image: url("up-arrow.svg");
+  background-image: image-url("up-arrow.svg");
   background-repeat: no-repeat;
   background-position: 50%;
   background-size: 25px;
@@ -102,7 +102,7 @@
   &:hover {
     background-color: #191414;
     border: 1px solid white;
-    background-image: url("up-arrow-white.svg");
+    background-image: image-url("up-arrow-white.svg");
     background-size: 25px;
     transition-duration: 400ms;
     transition-property: background-color;

@@ -1,13 +1,13 @@
 import { Controller } from "stimulus"
 
 export default class extends Controller {
-
+  static targets = ["colored", "projectstitle", "projectnames"]
 
   connect() {
 
     document.onscroll = () => {
-          const scrollTop = document.documentElement.scrollTop; // From 0 to 4000;
-          const allDivs = document.getElementsByClassName('colored-divs');
+          const scrollTop = document.documentElement.scrollTop;
+          const allDivs = this.coloredTargets;
 
           for (let i = 0; i < allDivs.length; i++ ) {
 
@@ -15,40 +15,29 @@ export default class extends Controller {
 
             // The code below makes the background color change when the
             // scroll top passes the 2/3 of the previous div.
-
             let heightBefore = 0;
             if (i > 0) {
-              heightBefore = allDivs[i-1].offsetHeight / 3;
+              heightBefore = allDivs[i-1].offsetHeight / 4;
             }
 
             if (scrollTop > curDiv.offsetTop - heightBefore) {
               const color = curDiv.getAttribute("data-color");
+              // object.style.transition = "property duration timing-function delay|initial|inherit"
+              document.body.style.transition = "background-color 10ms cubic-bezier() initial";
               document.body.style.background = color;
 
-              // Select from project section h2, p and b to change text color
-              const projectsH2 = document.querySelector(".projects h2");
-              const educationH2 = document.querySelector(".education h2");
-              const projectsP = document.querySelectorAll(".color-gray-400");
-              const projectsA = document.querySelectorAll(".project-links");
+              // Select from project and education section h2
+              this.projectstitleTarget.style.transition = "color 400ms cubic-bezier()";
+              this.projectstitleTarget.style.transitionDelay = "900ms";
+              this.projectstitleTarget.style.color = "#ffffff";
 
-              projectsH2.style.transitionTimingFunction = "ease";
-              projectsH2.style.transitionDelay = "2s";
-              projectsH2.style.transitionProperty = "color";
-              projectsH2.style.color = "#ffffff";
-
-              educationH2.style.transitionTimingFunction = "ease";
-              educationH2.style.transitionDelay = "4s";
-              educationH2.style.transitionProperty = "color";
-              educationH2.style.color = "#ffffff";
-
-              projectsP.forEach ( p =>
+              // Select from education p and b to change text color
+              this.projectnamesTargets.forEach ( p =>
                 p.setAttribute( "style",
-                  "transition-property: color; transition-delay: 2s; color:#ffffff;")
+                  "transition-property: color; transition-delay: 900ms; transition-timing-function: cubic-bezier(); color:#ffffff;")
               );
             }
           }
       };
-
-
   }
 }

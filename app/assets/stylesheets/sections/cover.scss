@@ -30,8 +30,11 @@
   text-align: center;
 }
 
-.cover-top-rigth {
-  // transition: font-weight 1s ease;
+.cover-top-right {
+  animation-name: bigimgout;
+  animation-duration: 2s;
+  animation-iteration-count: 1;
+  animation-timing-function: ease;
 }
 
 .cover-top-left {
@@ -39,5 +42,19 @@
   margin-left: 200px;
   img {
     width: 400px;
+    animation-name: bigimg;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease;
   }
+}
+
+@keyframes bigimg{
+  from{ transform: scale(1, 1) }
+  to{ transform: scale(1.1, 1.1);}
+}
+
+@keyframes bigimgout{
+  from{ transform: scale(1.1, 1.1) }
+  to{ transform: scale(1, 1);}
 }

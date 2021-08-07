@@ -18,7 +18,6 @@
 @import "sections/summary";
 
 
-
 // carousel jobs Swiper from here:
 @import 'swiper/swiper.scss';
 @import 'swiper/components/navigation/navigation.scss';
@@ -26,13 +25,16 @@
 @import 'swiper/components/controller/controller.scss';
 
 
+
+$primary: #191414;
+
 body {
-  color: white;
+  color: #FFFFFF;
   font-size: 18px;
   background: transparent;
-  transition: background  1s;
-  // font-family:  'Lato', sans-serif;
+  transition: background  400ms;
   font-family: Helvetica, Arial, sans-serif;
   letter-spacing: -.02em;
   margin: 0px;
 }
+

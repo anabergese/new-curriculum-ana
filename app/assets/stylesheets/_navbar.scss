@@ -22,35 +22,30 @@
     text-decoration: none;
     font-size: 18px;
     cursor: pointer;
-
-
     &:hover {
       color: #EAB4AE;
-      transition-duration: 0.2s;
-      transition-timing-function: cubic-bezier(0.25, 0.1, 0.24, 1.02);
-      transition-delay: 0s;
+      transition: color 0.2s cubic-bezier(0.25, 0.1, 0.24, 1.02) 0s;
     }
   }
 
 }
 
-
 // Change navbar opacity when scroll up:
 .navbar-white {
-  // transform: translateY(0);
   position: fixed; /* Set the navbar to fixed position */
   width: 96vw; /* Full width */
   z-index: 100;
   background-color: hsla(0,0%,100%,.8);
   backdrop-filter: blur(15px);
-
   transition-timing-function: ease-out;
   transition-duration: 500ms;
-  animation-name: shownav;
-  animation-name: hidenav;
-  animation-duration: 0.4s;
-  animation-fill-mode: both;
-  animation-iteration-count: 1;
+  // Animation Shorthand Property: "a-name a-duration a-timing-function a-delay a-iteration-count a-direction"
+  animation: shownav 0.4s ease 0s 1 both, hidenav 0.4s ease 0s 1 both;
+  // animation-name: shownav;
+  // animation-name: hidenav;
+  // animation-duration: 0.4s;
+  // animation-fill-mode: both;
+  // animation-iteration-count: 1;
 
     a {
         color: #191414;

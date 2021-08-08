@@ -1,3 +1,4 @@
+// Transition Shorthand Property: "property duration timing-function delay|initial|inherit"
 @mixin button($backgroundColor, $border-color) {
   width: 186px;
   height: 60px;
@@ -17,10 +18,7 @@
     color: #191414;
     border-color: #191414;
     border-width: 1px;
-    transition-property: all;
-    transition-duration: 0.2s;
-    transition-timing-function: ease;
-    transition-delay: 0s;
+    transition: all 0.2s ease 0s;
     cursor: pointer;
   }
 
@@ -38,8 +36,7 @@
     background-size: 25px;
     background-repeat: no-repeat;
     background-position: 50%;
-    transition-duration: 400ms;
-    transition-property: margin-right;
+    transition: margin-right 0.4s ease;
 }
 
 

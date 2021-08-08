@@ -69,6 +69,11 @@
   font-size: 18px;
   transition-duration: 400ms;
   transition-property: background-color;
+  a {
+    text-decoration: none;
+    color: white;
+    font-weight: 300;
+  }
 
   &:hover {
     background-color: white;
@@ -78,6 +83,11 @@
     cursor: pointer;
     transition-duration: 400ms;
     transition-property: background-color;
+    a {
+      text-decoration: none;
+      color: #191414;
+      font-weight: 300;
+    }
   }
 }
 

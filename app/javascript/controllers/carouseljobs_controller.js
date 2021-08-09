@@ -18,21 +18,10 @@ export default class extends Controller {
       spaceBetween: 600,
       centeredSlides: true,
 
-
       navigation: {
           nextEl: '.swiper-button-next-jobs',
           prevEl: '.swiper-button-prev-jobs',
       },
-
-      // virtual: {
-      //     slides: (function () {
-      //       const slides = [];
-      //       for (var i = 0; i < 600; i += 1) {
-      //         slides.push('Slide ' + (i + 1));
-      //       }
-      //       return slides;
-      //     })(),
-      //   },
     });
   }
 }

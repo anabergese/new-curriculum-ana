@@ -52,17 +52,15 @@
 }
 
 // Style for the carousel of jobs section:
-.swiper-container-jobs {
-  position: relative;
-}
+// .swiper-container-jobs {
+//   position: relative;
+// }
 
 .swiper-slide {
   text-align: center;
   font-size: 18px;
   background: transparent;
   margin: 0;
-  /* Center slide text vertically */
-  align-items: center;
 }
 
 // Buttons of carousel:
@@ -70,8 +68,8 @@
   position: absolute;
   width: 60px;
   height: 60px;
-  top: 43%;
-  left: 71%;
+  left: 95%;
+  top: 50%;
   border-radius: 50%;
   border-color: #191414;
   border-width: thin;
@@ -88,8 +86,8 @@
   position: absolute;
   width: 60px;
   height: 60px;
-  top: 43%;
-  left: 22%;
+  left: 1%;
+  top: 50%;
   border-radius: 50%;
   border-color: #191414;
   border-width: thin;

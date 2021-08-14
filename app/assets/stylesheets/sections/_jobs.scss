@@ -8,13 +8,12 @@
     @include titleH2($marginTop: 200px, $marginBottom: 50px);
   }
   a {
-      text-decoration: none;
-      &:visited {
-          color: #191414;
-      }
+    text-decoration: none;
+    &:visited {
+        color: #191414;
     }
+  }
 }
-
 
 // Card of jobs:
 .card-jobs {
@@ -28,7 +27,6 @@
   align-items: center;
   border-radius: 20px;
   background-color: #C3F0C8;
-
   h4 {
     font-size: 2.375rem;
     font-weight: 400;
@@ -50,11 +48,6 @@
   border-radius: 100px;
   background-color: #D5F5D9;
 }
-
-// Style for the carousel of jobs section:
-// .swiper-container-jobs {
-//   position: relative;
-// }
 
 .swiper-slide {
   text-align: center;

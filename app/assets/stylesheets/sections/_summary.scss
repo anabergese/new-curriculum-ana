@@ -9,14 +9,11 @@
 }
 
 .summary-left {
-    // margin-left: 118px;
-    padding: 0 80px;
-
+  padding: 0 80px;
 }
 
 .summary-right {
   padding: 0 80px 0 20px;
-  // margin: 0 0 0 80px;
 }
 
 .summary-menu {
@@ -39,10 +36,10 @@
   margin-bottom: $marginBottom;
   line-height: 110%;
 }
+
 .title {
   @include titleH2;
 }
-
 
 .description {
   font-size: 1.500rem;
@@ -51,16 +48,15 @@
   text-align: justify;
 }
 
-
 .links-summary {
- width: 40px;
- background-color: white;
- padding: 2px;
- border-radius: 50%;
- text-decoration: none;
- margin-right: 12px;
- transition-duration: 400ms;
- transition-property: box-shadow;
+  width: 40px;
+  background-color: white;
+  padding: 2px;
+  border-radius: 50%;
+  text-decoration: none;
+  margin-right: 12px;
+  transition-duration: 400ms;
+  transition-property: box-shadow;
   &:hover {
     box-shadow: 1px 1px 8px #888888;
     transition-duration: 400ms;

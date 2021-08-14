@@ -5,7 +5,6 @@
   padding: 20px 30px;
   position: relative;
   background-color: #DC3228;
-
   .img-navbar {
     background-image: image-url("coverface.png");
     width: 32px;
@@ -14,7 +13,6 @@
   }
 
   /* Style the links inside the navigation bar */
-
   a {
     color: #f2f2f2;
     text-align: center;
@@ -27,13 +25,12 @@
       transition: color 0.2s cubic-bezier(0.25, 0.1, 0.24, 1.02) 0s;
     }
   }
-
 }
 
 // Change navbar opacity when scroll up:
 .navbar-white {
-  position: fixed; /* Set the navbar to fixed position */
-  width: 96vw; /* Full width */
+  position: fixed;
+  width: 96vw;
   z-index: 100;
   background-color: hsla(0,0%,100%,.8);
   backdrop-filter: blur(15px);
@@ -41,35 +38,26 @@
   transition-duration: 500ms;
   // Animation Shorthand Property: "a-name a-duration a-timing-function a-delay a-iteration-count a-direction"
   animation: shownav 0.4s ease 0s 1 both, hidenav 0.4s ease 0s 1 both;
-  // animation-name: shownav;
-  // animation-name: hidenav;
-  // animation-duration: 0.4s;
-  // animation-fill-mode: both;
-  // animation-iteration-count: 1;
-
-    a {
-        color: #191414;
-
-        &:hover {
-          color: rgba(16,16,24,.6);
-        }
+  a {
+    color: #191414;
+    &:hover {
+      color: rgba(16,16,24,.6);
     }
-
-    .img-navbar {
-      background-image: image-url("facenav1t.png");
-    }
+  }
+  .img-navbar {
+    background-image: image-url("facenav1t.png");
+  }
 }
 
+@keyframes shownav {
+  from { transform: translateY(-72px)}
+  to {transform: translateY(0px)}
+}
 
-  @keyframes shownav {
-    from { transform: translateY(-72px)}
-    to {transform: translateY(0px)}
-  }
-
-  @keyframes hidenav {
-    from { transform: translateY(0px)}
-    to {transform: translateY(-72px)}
-  }
+@keyframes hidenav {
+  from { transform: translateY(0px)}
+  to {transform: translateY(-72px)}
+}
 
 
 

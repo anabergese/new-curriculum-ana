@@ -1,44 +1,30 @@
 .job-container {
   color: black;
   display: flex;
-
 }
 
 .job-content-left {
-    left: 0px;
-    // top: 0.001px;
-    // margin: 0px;
-    width: 720px;
-    height: 100vh;
-    padding: 24px 60px;
-    box-sizing: border-box;
-    // max-width: 720px;
-    // max-height: 100vh;
-    // position: fixed;
-
-    background: #c3f0c8;
-    // align-self: flex-start;
-    font-size: 80px;
+  left: 0px;
+  width: 720px;
+  height: 100vh;
+  padding: 24px 60px;
+  box-sizing: border-box;
+  background: #c3f0c8;
+  font-size: 80px;
 }
 
-
 .job-content-rigth {
-    rigth: 0px;
-    // top: 0.001px;
-    // margin: 0px;
-    width: 720px;
-    max-height: 100vh;
-    padding: 120px 60px;
-    box-sizing: border-box;
-    font-weight: 300;
-
-    p {
-      text-align: justify;
-      line-height: 180%;
-    }
-
-    img {
-      width: 250px;
-      // border-radius: 40px;
-    }
+  rigth: 0px;
+  width: 720px;
+  max-height: 100vh;
+  padding: 120px 60px;
+  box-sizing: border-box;
+  font-weight: 300;
+  p {
+    text-align: justify;
+    line-height: 180%;
+  }
+  img {
+    width: 250px;
+  }
 }

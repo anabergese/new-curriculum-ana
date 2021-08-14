@@ -3,7 +3,6 @@
   height: 100vh;
   // background-color: #ffcdd2;
   background-color: transparent;
-
   h2 {
     @include titleH2($marginTop: 0px, $marginBottom: 50px);
     color: #191414;
@@ -12,7 +11,6 @@
 }
 
 // Card of education:
-
 .card-education {
   width: 351px;
   height: 438px;
@@ -34,14 +32,14 @@
 }
 
 .rounded-p-education {
-    background-color: #064F40;
-    width: 95px;
-    padding: 0 15px;
-    border-radius: 100px;
-    display: inline-flex;
-    align-items: center;
-    min-height: 40px;
-    justify-content: center;
+  background-color: #064F40;
+  width: 95px;
+  padding: 0 15px;
+  border-radius: 100px;
+  display: inline-flex;
+  align-items: center;
+  min-height: 40px;
+  justify-content: center;
 }
 
 
@@ -85,6 +83,3 @@
   -webkit-align-items: center;
   align-items: center;
 }
-
-
-

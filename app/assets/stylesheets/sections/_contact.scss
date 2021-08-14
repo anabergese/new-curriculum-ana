@@ -4,7 +4,6 @@
   text-align: center;
   background-color: #191414;
   color: white;
-
   .contact-top {
     display: flex;
     flex-direction: column;
@@ -26,11 +25,11 @@
  margin-right: 8px;
  transition-duration: 400ms;
  transition-property: box-shadow;
-   &:hover {
-      box-shadow: 1px 1px 8px white;
-      transition-duration: 400ms;
-      transition-property: box-shadow;
-    }
+ &:hover {
+    box-shadow: 1px 1px 8px white;
+    transition-duration: 400ms;
+    transition-property: box-shadow;
+  }
 }
 
 .contact-footer {
@@ -40,7 +39,6 @@
   align-items: center;
   margin: auto 60px;
   font-size: 12px;
-
   a {
     text-decoration: none;
     color: white;

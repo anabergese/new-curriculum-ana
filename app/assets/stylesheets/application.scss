@@ -15,7 +15,6 @@
  */
 
 // Your CSS partials
-@import "sections/summary";
 
 
 // carousel jobs Swiper from here:
@@ -23,10 +22,6 @@
 @import 'swiper/components/navigation/navigation.scss';
 @import 'swiper/components/pagination/pagination.scss';
 @import 'swiper/components/controller/controller.scss';
-
-
-
-$primary: #191414;
 
 body {
   color: #FFFFFF;
@@ -37,4 +32,3 @@ body {
   letter-spacing: -.02em;
   margin: 0px;
 }
-

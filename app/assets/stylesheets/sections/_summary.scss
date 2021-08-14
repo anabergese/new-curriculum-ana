@@ -21,12 +21,10 @@
   p {
     margin-top: 0;
   }
-
   .summary-menu-p {
     padding-bottom: 24px;
     margin: 0 40px 0 0;
   }
-
 }
 
 @mixin titleH2($marginTop: 18px, $marginBottom: 40px) {
@@ -63,4 +61,3 @@
     transition-property: box-shadow;
   }
 }
-

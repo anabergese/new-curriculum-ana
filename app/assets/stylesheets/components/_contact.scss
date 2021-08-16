@@ -44,3 +44,22 @@
     font-size: 12px;
   }
 }
+
+@media only screen and (max-width: 600px) {
+  .contact-footer {
+    .button-scroll-to-top {
+      width: 32px;
+      height: 32px;
+      background-size: 10px;
+      margin-left: 56px;
+      &:hover {
+        background-size: 10px;
+      }
+    }
+    p, a {
+      font-size: 8px;
+      text-align: left;
+      margin-left: 4px;
+    }
+  }
+}

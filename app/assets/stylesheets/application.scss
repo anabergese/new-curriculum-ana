@@ -14,8 +14,11 @@
  *= require_self
  */
 
-// Your CSS partials
+// Graphical variables
+@import "config/colors";
 
+// Your CSS partials
+@import 'components/index';
 
 // carousel jobs Swiper from here:
 @import 'swiper/swiper.scss';

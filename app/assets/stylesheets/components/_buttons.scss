@@ -1,9 +1,11 @@
 // Transition Shorthand Property: "property duration timing-function delay|initial|inherit"
+@import "config/colors";
+
 @mixin button($backgroundColor, $border-color) {
   width: 186px;
   height: 60px;
   font-weight: 300;
-  background: #191414;
+  background: $black;
   color: white;
   border-color: $border-color;
   border-radius: 100px;
@@ -14,8 +16,8 @@
   font-size: 18px;
   &:hover {
     background-color: $backgroundColor;
-    color: #191414;
-    border-color: #191414;
+    color: $black;
+    border-color: $black;
     border-width: 1px;
     transition: all 0.2s ease 0s;
     cursor: pointer;
@@ -28,8 +30,8 @@
   width: 60px;
   height: 60px;
   cursor: pointer;
-  background-color: #191414;
-  border: 1px solid #191414;
+  background-color: $black;
+  border: 1px solid $black;
   background-image: image-url("right-arrow-white.svg");
   background-size: 25px;
   background-repeat: no-repeat;
@@ -38,7 +40,7 @@
 }
 
 .project-links:hover {
-  border-color: #191414;
+  border-color: $black;
   .button-projects {
     background-color: white;
     margin-right: 16px;
@@ -54,7 +56,7 @@
   width: 186px;
   height: 60px;
   font-weight: 300;
-  background: #191414;
+  background: $black;
   color: white;
   border: 1px solid white;
   border-radius: 100px;
@@ -69,15 +71,15 @@
   }
   &:hover {
     background-color: white;
-    color: #191414;
-    border-color: #191414;
+    color: $black;
+    border-color: $black;
     border-width: 1px;
     cursor: pointer;
     transition-duration: 400ms;
     transition-property: background-color;
     a {
       text-decoration: none;
-      color: #191414;
+      color: $black;
       font-weight: 300;
     }
   }
@@ -97,7 +99,7 @@
   transition-duration: 400ms;
   transition-property: background-color;
   &:hover {
-    background-color: #191414;
+    background-color: $black;
     border: 1px solid white;
     background-image: image-url("up-arrow-white.svg");
     background-size: 25px;

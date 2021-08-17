@@ -93,3 +93,10 @@
   cursor: pointer;
   transform: rotate(180deg);
 }
+
+
+@media only screen and (max-width: 600px) {
+  .jobs, .education {
+    display: none;
+  }
+}

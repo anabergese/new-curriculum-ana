@@ -48,3 +48,37 @@
   border-radius: 100px;
   margin-top: 18px;
 }
+
+
+
+@media only screen and (max-width: 600px) {
+  // Cards of skills:
+  .cards-skills {
+    margin: auto 0px;
+    padding-top: 40px;
+    justify-content: space-evenly;
+  }
+
+  .card-skills {
+    width: 80px;
+    height: 140px;
+    padding: 10px 5px;
+    h4 {
+      font-size: 1rem;
+      font-weight: 300;
+      letter-spacing: -.01em;
+      margin: 5px auto 6px;
+    }
+  }
+
+  .image-skills {
+    width: 100%;
+    max-width: 33px;
+    max-height: 33px;
+    min-width: 33px;
+    min-height: 33px;
+    border-radius: 4px;
+    margin-top: 4px;
+  }
+
+}

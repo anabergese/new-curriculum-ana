@@ -34,3 +34,17 @@
     padding: 0;
   }
 }
+
+
+@media only screen and (max-width: 600px) {
+  .flip-card-inner {
+    width: 80px;
+    height: 140px;
+  }
+
+  .flip-card-back {
+    font-size: 8px;
+    font-weight: 300;
+    line-height: 100%;
+  }
+}

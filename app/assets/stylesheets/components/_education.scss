@@ -48,7 +48,6 @@
   color: hsla(0,0%,100%,.8);
 }
 
-// Button see more in card-education
 .date-info {
   display: flex;
   align-items: center;
@@ -80,4 +79,54 @@
   -ms-flex-align: center;
   -webkit-align-items: center;
   align-items: center;
+}
+
+
+@media only screen and (max-width: 600px) {
+  .education {
+    margin-top: 200px;
+    h2 {
+      font-size: 22px;
+      text-align: center;
+    }
+
+  // Card of education:
+   .card-education {
+      width: 175px;
+      height: 219px;
+      padding: 15px;
+      text-align: center;
+      border-style: solid;
+      h4 {
+        font-size: 1rem;
+        font-weight: 300;
+        line-height: 100%;
+      }
+    }
+
+    .rounded-p-education {
+      width: 47px;
+      padding: 0 7px;
+      min-height: 20px;
+    }
+
+    .education-description {
+      font-size: 8px;
+      text-align: center;
+    }
+
+    .date-info {
+      font-size: 6px;
+    }
+
+    // Stile for carousel of education:
+    .swiper-container {
+      height: 266px;
+      margin: 10px auto;
+    }
+
+    .swiper-slide {
+      font-size: 8px;
+    }
+  }
 }

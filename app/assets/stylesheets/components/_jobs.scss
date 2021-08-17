@@ -96,7 +96,49 @@
 
 
 @media only screen and (max-width: 600px) {
-  .jobs, .education {
-    display: none;
+  .jobs {
+    h2 {
+      font-size: 22px;
+      text-align: center;
+    }
+  }
+
+  // Card of jobs:
+  .card-jobs {
+    width: 175px;
+    height: 219px;
+    padding: 15px;
+    margin: 4px 0px;
+    border-style: solid;
+
+    h4 {
+      font-size: 1rem;
+      font-weight: 300;
+      line-height: 100%;
+    }
+  }
+
+  .rounded-p {
+    width: 47px;
+    min-height: 20px;
+    padding: 0 7px;
+  }
+
+  .swiper-slide {
+    font-size: 8px;
+  }
+
+  // Buttons of carousel:
+  .swiper-button-next-jobs {
+    width: 32px;
+    height: 32px;
+    background-size: 20px;
+  }
+
+  .swiper-button-prev-jobs {
+    position: absolute;
+    width: 32px;
+    height: 32px;
+    background-size: 20px;
   }
 }

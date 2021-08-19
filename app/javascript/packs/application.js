@@ -23,4 +23,3 @@ import "controllers"
 //   scrollAnimation();
 // });
 
-

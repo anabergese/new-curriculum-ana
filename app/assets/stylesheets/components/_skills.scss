@@ -2,20 +2,20 @@
 .skills {
   text-align: center;
   height: 100vh;
+  width: 100vw;
   background-color: transparent;
 }
 
 // Cards of skills:
 .cards-skills {
   display: flex;
-  justify-content: space-between;
-  margin: auto 100px;
+  justify-content: space-around;
   padding-top: 160px;
-
+  width: 100vw;
 }
 
 .card-skills {
-  width: 371px;
+  width: 324px;
   height: 400px;
   padding: 40px 20px;
   display: flex;
@@ -50,20 +50,27 @@
 }
 
 @media only screen and (max-width: 600px) {
+  .skills {
+    height: 250px;
+  }
   // Cards of skills:
   .cards-skills {
-    margin: auto 0px;
-    padding-top: 40px;
-    justify-content: space-evenly;
-    width: 396px;
+    padding-top: 60px;
+    width: 100vw;
+    .soft-skills {
+      margin-left: 10px;
+    }
+    .languages {
+      margin-right: 10px;
+    }
   }
 
   .card-skills {
-    width: 90px;
+    width: 70px;
     height: 140px;
     padding: 10px 5px;
     h4 {
-      font-size: 1rem;
+      font-size: 12px;
       font-weight: 300;
       letter-spacing: -.01em;
       margin: 5px auto 6px;

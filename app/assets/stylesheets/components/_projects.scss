@@ -33,7 +33,7 @@
   background-size: cover;
   background-position: center 6%;
   background-repeat: no-repeat;
-
+  opacity: 0.5;
   transition: flex 0.7s ease-in;
   border-radius: 100px;
   border: 1px solid rgba(16,16,24,.12);
@@ -54,6 +54,7 @@
 
 .project-links:hover {
   border: 1px solid rgba(255,255,255,1);
+  opacity: 1;
 }
 
 @media only screen and (max-width: 600px) {

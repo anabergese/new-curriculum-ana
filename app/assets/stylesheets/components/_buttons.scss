@@ -52,7 +52,7 @@
 }
 
 // Buttons contact section:
-.button-contact, .openbot{
+.button-contact {
   width: 186px;
   height: 60px;
   font-weight: 300;
@@ -83,14 +83,6 @@
       font-weight: 300;
     }
   }
-}
-
-.openbot {
-  position: absolute;
-  top: 90%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
 }
 
 .button-scroll-to-top {

@@ -7,3 +7,78 @@
 2023-07-09 13:26:35.687 CEST [33826] FATAL:  database "my_database_development" does not exist
 2023-07-09 13:27:51.084 CEST [33889] ERROR:  database "my_database_development" already exists
 2023-07-09 13:27:51.084 CEST [33889] STATEMENT:  CREATE DATABASE "my_database_development" ENCODING = 'utf8'
+2023-07-10 12:01:07.772 CEST [33779] LOG:  out of file descriptors: Too many open files in system; release and retry
+2023-07-10 12:01:07.775 CEST [33779] LOG:  out of file descriptors: Too many open files in system; release and retry
+2023-07-10 12:01:07.775 CEST [33779] WARNING:  could not open statistics file "pg_stat_tmp/global.stat": Too many open files in system
+2023-07-10 12:01:07.775 CEST [33780] LOG:  out of file descriptors: Too many open files in system; release and retry
+2023-07-10 12:01:07.775 CEST [33780] LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": Too many open files in system
+2023-07-10 12:01:07.785 CEST [33779] LOG:  out of file descriptors: Too many open files in system; release and retry
+2023-07-10 12:01:07.785 CEST [33779] WARNING:  could not open statistics file "pg_stat_tmp/global.stat": Too many open files in system
+2023-07-10 12:01:07.796 CEST [33779] LOG:  out of file descriptors: Too many open files in system; release and retry
+2023-07-10 12:01:07.796 CEST [33779] WARNING:  could not open statistics file "pg_stat_tmp/global.stat": Too many open files in system
+2023-07-10 12:01:07.807 CEST [33779] LOG:  out of file descriptors: Too many open files in system; release and retry
+2023-07-10 12:01:07.807 CEST [33779] WARNING:  could not open statistics file "pg_stat_tmp/global.stat": Too many open files in system
+2023-07-10 12:01:07.817 CEST [33779] LOG:  out of file descriptors: Too many open files in system; release and retry
+2023-07-10 12:01:07.817 CEST [33779] WARNING:  could not open statistics file "pg_stat_tmp/global.stat": Too many open files in system
+2023-07-10 12:01:07.828 CEST [33779] LOG:  out of file descriptors: Too many open files in system; release and retry
+2023-07-10 12:01:07.828 CEST [33779] WARNING:  could not open statistics file "pg_stat_tmp/global.stat": Too many open files in system
+2023-07-10 12:01:07.838 CEST [33779] LOG:  out of file descriptors: Too many open files in system; release and retry
+2023-07-10 12:01:07.838 CEST [33779] WARNING:  could not open statistics file "pg_stat_tmp/global.stat": Too many open files in system
+2023-07-10 12:01:07.848 CEST [33779] LOG:  out of file descriptors: Too many open files in system; release and retry
+2023-07-10 12:01:07.848 CEST [33779] WARNING:  could not open statistics file "pg_stat_tmp/global.stat": Too many open files in system
+2023-07-10 12:01:07.858 CEST [33779] LOG:  out of file descriptors: Too many open files in system; release and retry
+2023-07-10 12:01:07.858 CEST [33779] WARNING:  could not open statistics file "pg_stat_tmp/global.stat": Too many open files in system
+2023-07-10 12:01:07.868 CEST [33779] LOG:  out of file descriptors: Too many open files in system; release and retry
+2023-07-10 12:01:07.868 CEST [33779] WARNING:  could not open statistics file "pg_stat_tmp/global.stat": Too many open files in system
+2023-07-10 12:01:07.878 CEST [33779] LOG:  out of file descriptors: Too many open files in system; release and retry
+2023-07-10 12:01:07.878 CEST [33779] WARNING:  could not open statistics file "pg_stat_tmp/global.stat": Too many open files in system
+2023-07-10 12:01:07.889 CEST [33779] LOG:  out of file descriptors: Too many open files in system; release and retry
+2023-07-10 12:01:07.889 CEST [33779] WARNING:  could not open statistics file "pg_stat_tmp/global.stat": Too many open files in system
+2023-07-10 12:01:07.899 CEST [33779] LOG:  out of file descriptors: Too many open files in system; release and retry
+2023-07-10 12:01:07.899 CEST [33779] WARNING:  could not open statistics file "pg_stat_tmp/global.stat": Too many open files in system
+2023-07-10 12:01:07.909 CEST [33779] LOG:  out of file descriptors: Too many open files in system; release and retry
+2023-07-10 12:01:07.909 CEST [33779] WARNING:  could not open statistics file "pg_stat_tmp/global.stat": Too many open files in system
+2023-07-10 12:01:07.919 CEST [33779] LOG:  out of file descriptors: Too many open files in system; release and retry
+2023-07-10 12:01:07.919 CEST [33779] WARNING:  could not open statistics file "pg_stat_tmp/global.stat": Too many open files in system
+2023-07-10 12:01:07.929 CEST [33779] LOG:  out of file descriptors: Too many open files in system; release and retry
+2023-07-10 12:01:07.929 CEST [33779] WARNING:  could not open statistics file "pg_stat_tmp/global.stat": Too many open files in system
+2023-07-10 12:01:07.939 CEST [33779] LOG:  out of file descriptors: Too many open files in system; release and retry
+2023-07-10 12:01:07.939 CEST [33779] WARNING:  could not open statistics file "pg_stat_tmp/global.stat": Too many open files in system
+2023-07-10 12:01:07.949 CEST [33779] LOG:  out of file descriptors: Too many open files in system; release and retry
+2023-07-10 12:01:07.949 CEST [33779] WARNING:  could not open statistics file "pg_stat_tmp/global.stat": Too many open files in system
+2023-07-10 12:01:07.960 CEST [33779] LOG:  out of file descriptors: Too many open files in system; release and retry
+2023-07-10 12:01:07.960 CEST [33779] WARNING:  could not open statistics file "pg_stat_tmp/global.stat": Too many open files in system
+2023-07-10 12:01:07.970 CEST [33779] LOG:  out of file descriptors: Too many open files in system; release and retry
+2023-07-10 12:01:07.970 CEST [33779] WARNING:  could not open statistics file "pg_stat_tmp/global.stat": Too many open files in system
+2023-07-10 12:01:07.980 CEST [33779] LOG:  out of file descriptors: Too many open files in system; release and retry
+2023-07-10 12:01:07.980 CEST [33779] WARNING:  could not open statistics file "pg_stat_tmp/global.stat": Too many open files in system
+2023-07-10 12:01:07.990 CEST [33779] LOG:  out of file descriptors: Too many open files in system; release and retry
+2023-07-10 12:01:07.990 CEST [33779] WARNING:  could not open statistics file "pg_stat_tmp/global.stat": Too many open files in system
+2023-07-10 12:01:08.000 CEST [33779] LOG:  out of file descriptors: Too many open files in system; release and retry
+2023-07-10 12:01:08.000 CEST [33779] WARNING:  could not open statistics file "pg_stat_tmp/global.stat": Too many open files in system
+2023-07-10 12:01:08.010 CEST [33779] LOG:  out of file descriptors: Too many open files in system; release and retry
+2023-07-10 12:01:08.010 CEST [33779] WARNING:  could not open statistics file "pg_stat_tmp/global.stat": Too many open files in system
+2023-07-10 12:01:08.020 CEST [33779] LOG:  out of file descriptors: Too many open files in system; release and retry
+2023-07-10 12:01:08.020 CEST [33779] WARNING:  could not open statistics file "pg_stat_tmp/global.stat": Too many open files in system
+2023-07-10 12:01:08.030 CEST [33779] LOG:  out of file descriptors: Too many open files in system; release and retry
+2023-07-10 12:01:08.030 CEST [33779] WARNING:  could not open statistics file "pg_stat_tmp/global.stat": Too many open files in system
+2023-07-10 12:01:08.040 CEST [33779] LOG:  out of file descriptors: Too many open files in system; release and retry
+2023-07-10 12:01:08.040 CEST [33779] WARNING:  could not open statistics file "pg_stat_tmp/global.stat": Too many open files in system
+2023-07-10 12:01:08.050 CEST [33779] LOG:  out of file descriptors: Too many open files in system; release and retry
+2023-07-10 12:01:08.051 CEST [33779] WARNING:  could not open statistics file "pg_stat_tmp/global.stat": Too many open files in system
+2023-07-10 12:01:08.061 CEST [33779] LOG:  out of file descriptors: Too many open files in system; release and retry
+2023-07-10 12:01:08.061 CEST [33779] WARNING:  could not open statistics file "pg_stat_tmp/global.stat": Too many open files in system
+2023-07-10 12:01:08.071 CEST [33779] LOG:  out of file descriptors: Too many open files in system; release and retry
+2023-07-10 12:01:08.071 CEST [33779] WARNING:  could not open statistics file "pg_stat_tmp/global.stat": Too many open files in system
+2023-07-10 12:01:08.081 CEST [33779] LOG:  out of file descriptors: Too many open files in system; release and retry
+2023-07-10 12:01:08.081 CEST [33779] WARNING:  could not open statistics file "pg_stat_tmp/global.stat": Too many open files in system
+2023-07-10 12:01:08.091 CEST [33779] LOG:  out of file descriptors: Too many open files in system; release and retry
+2023-07-10 12:01:08.091 CEST [33779] WARNING:  could not open statistics file "pg_stat_tmp/global.stat": Too many open files in system
+2023-07-10 12:01:08.101 CEST [33779] LOG:  out of file descriptors: Too many open files in system; release and retry
+2023-07-10 12:01:08.101 CEST [33779] WARNING:  could not open statistics file "pg_stat_tmp/global.stat": Too many open files in system
+2023-07-10 12:01:08.112 CEST [33779] LOG:  out of file descriptors: Too many open files in system; release and retry
+2023-07-10 12:01:08.112 CEST [33779] WARNING:  could not open statistics file "pg_stat_tmp/global.stat": Too many open files in system
+2023-07-10 12:01:08.122 CEST [33779] LOG:  out of file descriptors: Too many open files in system; release and retry
+2023-07-10 12:01:08.122 CEST [33779] WARNING:  could not open statistics file "pg_stat_tmp/global.stat": Too many open files in system
+2023-07-10 12:01:08.132 CEST [33779] LOG:  out of file descriptors: Too many open files in system; release and retry
+2023-07-10 12:01:08.132 CEST [33779] WARNING:  could not open statistics file "pg_stat_tmp/global.stat": Too many open files in system

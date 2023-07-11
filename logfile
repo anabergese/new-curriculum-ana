@@ -82,3 +82,11 @@
 2023-07-10 12:01:08.122 CEST [33779] WARNING:  could not open statistics file "pg_stat_tmp/global.stat": Too many open files in system
 2023-07-10 12:01:08.132 CEST [33779] LOG:  out of file descriptors: Too many open files in system; release and retry
 2023-07-10 12:01:08.132 CEST [33779] WARNING:  could not open statistics file "pg_stat_tmp/global.stat": Too many open files in system
+2023-07-10 12:59:45.296 CEST [42018] FATAL:  database "rails-watch-list_development" does not exist
+2023-07-10 15:46:36.786 CEST [47789] ERROR:  database "rails-watch-list_development" already exists
+2023-07-10 15:46:36.786 CEST [47789] STATEMENT:  CREATE DATABASE "rails-watch-list_development" ENCODING = 'unicode'
+2023-07-10 15:46:36.797 CEST [47791] ERROR:  database "rails-watch-list_test" already exists
+2023-07-10 15:46:36.797 CEST [47791] STATEMENT:  CREATE DATABASE "rails-watch-list_test" ENCODING = 'unicode'
+2023-07-10 20:34:35.486 CEST [53809] FATAL:  database "Be_Famous_Too_development" does not exist
+2023-07-10 20:34:36.021 CEST [53812] FATAL:  database "Be_Famous_Too_development" does not exist
+2023-07-10 20:35:12.974 CEST [53904] FATAL:  database "Be_Famous_Too_development" does not exist

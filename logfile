@@ -90,3 +90,7 @@
 2023-07-10 20:34:35.486 CEST [53809] FATAL:  database "Be_Famous_Too_development" does not exist
 2023-07-10 20:34:36.021 CEST [53812] FATAL:  database "Be_Famous_Too_development" does not exist
 2023-07-10 20:35:12.974 CEST [53904] FATAL:  database "Be_Famous_Too_development" does not exist
+2023-07-16 20:42:47.719 CEST [33774] LOG:  received smart shutdown request
+2023-07-16 20:42:47.728 CEST [33774] LOG:  background worker "logical replication launcher" (PID 33781) exited with exit code 1
+2023-07-16 20:42:47.729 CEST [33776] LOG:  shutting down
+2023-07-16 20:42:47.746 CEST [33774] LOG:  database system is shut down

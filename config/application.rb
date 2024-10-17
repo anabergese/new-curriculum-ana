@@ -28,5 +28,10 @@ module NewCurriculumAna
     # Application configuration can go into files in config/initializers
     # -- all .rb files in that directory are automatically loaded after loading
     # the framework and any gems in your application.
+
+    # Disable ActiveRecord and other database-related generators
+    config.generators do |g|
+      g.orm :skip
+    end
   end
 end

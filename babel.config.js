@@ -44,7 +44,7 @@ module.exports = function(api) {
       [
         '@babel/plugin-proposal-class-properties',
         {
-          loose: true
+          loose: false // Cambiado a false
         }
       ],
       [
@@ -65,6 +65,18 @@ module.exports = function(api) {
         '@babel/plugin-transform-regenerator',
         {
           async: false
+        }
+      ],
+      [
+        '@babel/plugin-transform-private-methods',
+        {
+          loose: false // Añadido para métodos privados
+        }
+      ],
+      [
+        '@babel/plugin-transform-private-property-in-object',
+        {
+          loose: false // Añadido para propiedades privadas en objetos
         }
       ]
     ].filter(Boolean)

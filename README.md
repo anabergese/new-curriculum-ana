@@ -16,4 +16,6 @@ Asset pipeline is Propshaft with jsbundling-rails and cssbundling-rails.
 # ISSUES
 
 Some of the SASS features used (specifically @import) has since been depricated
-and the CSS thus needs to be restructured to the current
+and the CSS thus needs to be restructured to the current standard.
+
+More info here: https://sass-lang.com/documentation/breaking-changes/import/

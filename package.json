@@ -1,23 +1,17 @@
 {
-  "name": "new_curriculum_ana",
+  "name": "app",
   "private": true,
-  "dependencies": {
-    "@rails/actioncable": "^6.0.0",
-    "@rails/ujs": "^6.0.0",
-    "@rails/webpacker": "^5.4.4",
-    "bootstrap": "4.6",
-    "jquery": "^3.6.0",
-    "popper.js": "^1.16.1",
-    "stimulus": "^2.0.0",
-    "swiper": "^6.7.5",
-    "turbolinks": "^5.2.0"
-  },
-  "version": "0.1.0",
+  "packageManager": "yarn@1.22.22+sha512.a6b2f7906b721bba3d67d4aff083df04dad64c399707841b7acf00f6b133b7ac24255f2652fa22ae3534329dc6180534e98d17432037ff6fd140556e2bb3137e",
   "devDependencies": {
-    "webpack-dev-server": "^4.15.1"
+    "esbuild": "^0.25.5"
   },
-  "engines": {
-    "node": "20.x",
-    "yarn": "1.22.19"
+  "scripts": {
+    "build": "esbuild app/javascript/*.* --bundle --sourcemap --format=esm --outdir=app/assets/builds --public-path=/assets",
+    "build:css": "sass ./app/assets/stylesheets/application.sass.scss:./app/assets/builds/application.css --no-source-map --load-path=node_modules"
+  },
+  "dependencies": {
+    "@hotwired/stimulus": "^3.2.2",
+    "@hotwired/turbo-rails": "^8.0.16",
+    "sass": "^1.89.2"
   }
 }

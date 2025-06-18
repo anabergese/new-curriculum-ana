@@ -1,0 +1,19 @@
+/* Error: Undefined mixin.
+ *   ,
+ * 8 |     @include titleH2($marginTop: 0px, $marginBottom: 50px);
+ *   |     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ *   '
+ *   app/assets/stylesheets/components/_education.scss 8:5  @use
+ *   app/assets/stylesheets/components/_index.scss 4:1      @use
+ *   app/assets/stylesheets/application.sass.scss 7:1       root stylesheet */
+
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
+  display: block;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: "Error: Undefined mixin.\a   \2577 \a 8 \2502      @include titleH2($marginTop: 0px, $marginBottom: 50px);\a   \2502      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\a   \2575 \a   app/assets/stylesheets/components/_education.scss 8:5  @use\a   app/assets/stylesheets/components/_index.scss 4:1      @use\a   app/assets/stylesheets/application.sass.scss 7:1       root stylesheet";
+}

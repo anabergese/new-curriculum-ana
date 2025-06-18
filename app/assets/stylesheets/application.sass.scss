@@ -1,0 +1,23 @@
+// Entry point for your Sass build
+
+// Graphical variables
+@use "config/colors";
+
+// // Your CSS partials
+@use 'components/index';
+
+// // carousel jobs Swiper from here:
+@use 'swiper/swiper.scss';
+@use 'swiper/components/navigation/navigation.scss';
+@use 'swiper/components/pagination/pagination.scss';
+@use 'swiper/components/controller/controller.scss';
+
+body {
+  color: #FFFFFF;
+  font-size: 18px;
+  background: transparent;
+  transition: background  400ms;
+  font-family: Helvetica, Arial, sans-serif;
+  letter-spacing: -.02em;
+  margin: 0px;
+}

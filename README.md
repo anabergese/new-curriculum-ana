@@ -1,24 +1,21 @@
-# README
+# STACK
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Ruby v3.4.3 on Rails v8.0.2
+Minimal Rails installation with
 
-Things you may want to cover:
+Asset pipeline is Propshaft with jsbundling-rails and cssbundling-rails.
 
-* Ruby version
+# DEVELOPMENT
 
-* System dependencies
+1. Clone this repository
+2. Run ```bundle install```
+3. Run ```yarn install```
+4. Start the development server with ```bin/dev```
+5. Visit http://localhost:3000 in your browser
 
-* Configuration
+# ISSUES
 
-* Database creation
+Some of the SASS features used (specifically @import) has since been depricated
+and the CSS thus needs to be restructured to the current standard.
 
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+More info here: https://sass-lang.com/documentation/breaking-changes/import/

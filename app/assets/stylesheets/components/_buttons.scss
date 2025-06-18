@@ -1,5 +1,6 @@
 // Transition Shorthand Property: "property duration timing-function delay|initial|inherit"
-@import "config/colors";
+@use "../config/colors.scss";
+$black: #191414;
 
 @mixin button($backgroundColor, $border-color) {
   width: 186px;

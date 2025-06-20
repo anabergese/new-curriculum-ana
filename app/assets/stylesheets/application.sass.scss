@@ -6,11 +6,15 @@
 // // Your CSS partials
 @use 'components/index';
 
-// // carousel jobs Swiper from here:
-@use 'swiper/swiper.scss';
-@use 'swiper/components/navigation/navigation.scss';
-@use 'swiper/components/pagination/pagination.scss';
-@use 'swiper/components/controller/controller.scss';
+// // gpt recomendation for swiper:
+@use "swiper/swiper.scss" as *;
+
+// my code before was Swiper from here:
+// @import 'swiper/swiper.scss';
+// @import 'swiper/components/navigation/navigation.scss';
+// @import 'swiper/components/pagination/pagination.scss';
+// @import 'swiper/components/controller/controller.scss';
+
 
 body {
   color: #FFFFFF;

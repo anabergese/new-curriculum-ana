@@ -1,11 +1,11 @@
-@use "summary";
+@use "summary" as s;
 .education {
   display: none;
   height: 100vh;
   // background-color: #ffcdd2;
   background-color: transparent;
   h2 {
-    @include titleH2($marginTop: 0px, $marginBottom: 50px);
+    @include s.titleH2($marginTop: 0px, $marginBottom: 50px);
     color: #191414;
     text-align: center;
   }
@@ -93,7 +93,7 @@
     }
 
   // Card of education:
-   .card-education {
+  .card-education {
       width: 175px;
       height: 219px;
       padding: 15px;

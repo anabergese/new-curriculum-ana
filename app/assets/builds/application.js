@@ -1,5 +1,11 @@
 var __defProp = Object.defineProperty;
 var __getOwnPropNames = Object.getOwnPropertyNames;
+var __require = /* @__PURE__ */ ((x) => typeof require !== "undefined" ? require : typeof Proxy !== "undefined" ? new Proxy(x, {
+  get: (a, b) => (typeof require !== "undefined" ? require : a)[b]
+}) : x)(function(x) {
+  if (typeof require !== "undefined") return require.apply(this, arguments);
+  throw Error('Dynamic require of "' + x + '" is not supported');
+});
 var __esm = (fn, res) => function __init() {
   return fn && (res = (0, fn[__getOwnPropNames(fn)[0]])(fn = 0)), res;
 };
@@ -6395,8 +6401,8 @@ function typecast(value) {
   }
 }
 var Binding = class {
-  constructor(context, action) {
-    this.context = context;
+  constructor(context2, action) {
+    this.context = context2;
     this.action = action;
   }
   get index() {
@@ -7048,8 +7054,8 @@ var ValueListObserver = class {
   }
 };
 var BindingObserver = class {
-  constructor(context, delegate) {
-    this.context = context;
+  constructor(context2, delegate) {
+    this.context = context2;
     this.delegate = delegate;
     this.bindingsByAction = /* @__PURE__ */ new Map();
   }
@@ -7111,8 +7117,8 @@ var BindingObserver = class {
   }
 };
 var ValueObserver = class {
-  constructor(context, receiver) {
-    this.context = context;
+  constructor(context2, receiver) {
+    this.context = context2;
     this.receiver = receiver;
     this.stringMapObserver = new StringMapObserver(this.element, this);
     this.valueDescriptorMap = this.controller.valueDescriptorMap;
@@ -7204,8 +7210,8 @@ var ValueObserver = class {
   }
 };
 var TargetObserver = class {
-  constructor(context, delegate) {
-    this.context = context;
+  constructor(context2, delegate) {
+    this.context = context2;
     this.delegate = delegate;
     this.targetsByName = new Multimap();
   }
@@ -7292,9 +7298,9 @@ function getOwnStaticObjectPairs(constructor, propertyName) {
   return definition ? Object.keys(definition).map((key) => [key, definition[key]]) : [];
 }
 var OutletObserver = class {
-  constructor(context, delegate) {
+  constructor(context2, delegate) {
     this.started = false;
-    this.context = context;
+    this.context = context2;
     this.delegate = delegate;
     this.outletsByName = new Multimap();
     this.outletElementsByName = new Multimap();
@@ -7308,7 +7314,7 @@ var OutletObserver = class {
         this.setupAttributeObserverForOutlet(outletName);
       });
       this.started = true;
-      this.dependentContexts.forEach((context) => context.refresh());
+      this.dependentContexts.forEach((context2) => context2.refresh());
     }
   }
   refresh() {
@@ -7444,7 +7450,7 @@ var OutletObserver = class {
   }
   get dependentContexts() {
     const identifiers = this.dependentControllerIdentifiers;
-    return this.router.contexts.filter((context) => identifiers.includes(context.identifier));
+    return this.router.contexts.filter((context2) => identifiers.includes(context2.identifier));
   }
   hasOutlet(element, outletName) {
     return !!this.getOutlet(element, outletName) || !!this.getOutletFromMap(element, outletName);
@@ -7660,24 +7666,24 @@ var Module = class {
     return Array.from(this.connectedContexts);
   }
   connectContextForScope(scope) {
-    const context = this.fetchContextForScope(scope);
-    this.connectedContexts.add(context);
-    context.connect();
+    const context2 = this.fetchContextForScope(scope);
+    this.connectedContexts.add(context2);
+    context2.connect();
   }
   disconnectContextForScope(scope) {
-    const context = this.contextsByScope.get(scope);
-    if (context) {
-      this.connectedContexts.delete(context);
-      context.disconnect();
+    const context2 = this.contextsByScope.get(scope);
+    if (context2) {
+      this.connectedContexts.delete(context2);
+      context2.disconnect();
     }
   }
   fetchContextForScope(scope) {
-    let context = this.contextsByScope.get(scope);
-    if (!context) {
-      context = new Context(this, scope);
-      this.contextsByScope.set(scope, context);
+    let context2 = this.contextsByScope.get(scope);
+    if (!context2) {
+      context2 = new Context(this, scope);
+      this.contextsByScope.set(scope, context2);
     }
-    return context;
+    return context2;
   }
 };
 var ClassMap = class {
@@ -8013,7 +8019,7 @@ var Router = class {
   getContextForElementAndIdentifier(element, identifier) {
     const module = this.modulesByIdentifier.get(identifier);
     if (module) {
-      return module.contexts.find((context) => context.element == element);
+      return module.contexts.find((context2) => context2.element == element);
     }
   }
   proposeToConnectScopeForElementAndIdentifier(element, identifier) {
@@ -8118,11 +8124,11 @@ var Application = class {
     identifiers.forEach((identifier) => this.router.unloadIdentifier(identifier));
   }
   get controllers() {
-    return this.router.contexts.map((context) => context.controller);
+    return this.router.contexts.map((context2) => context2.controller);
   }
   getControllerForElementAndIdentifier(element, identifier) {
-    const context = this.router.getContextForElementAndIdentifier(element, identifier);
-    return context ? context.controller : null;
+    const context2 = this.router.getContextForElementAndIdentifier(element, identifier);
+    return context2 ? context2.controller : null;
   }
   handleError(error2, message, detail) {
     var _a;
@@ -8476,8 +8482,8 @@ function writeString(value) {
   return `${value}`;
 }
 var Controller = class {
-  constructor(context) {
-    this.context = context;
+  constructor(context2) {
+    this.context = context2;
   }
   static get shouldLoad() {
     return true;
@@ -8532,20 +8538,33 @@ Controller.targets = [];
 Controller.outlets = [];
 Controller.values = {};
 
-// app/javascript/controllers/application.js
-var application = Application.start();
-application.debug = false;
-window.Stimulus = application;
-
-// app/javascript/controllers/hello_controller.js
-var hello_controller_default = class extends Controller {
-  connect() {
-    this.element.textContent = "Hello World!";
+// node_modules/@hotwired/stimulus-webpack-helpers/dist/stimulus-webpack-helpers.js
+function definitionsFromContext(context2) {
+  return context2.keys().map((key) => definitionForModuleWithContextAndKey(context2, key)).filter((value) => value);
+}
+function definitionForModuleWithContextAndKey(context2, key) {
+  const identifier = identifierForContextKey(key);
+  if (identifier) {
+    return definitionForModuleAndIdentifier(context2(key), identifier);
   }
-};
+}
+function definitionForModuleAndIdentifier(module, identifier) {
+  const controllerConstructor = module.default;
+  if (typeof controllerConstructor == "function") {
+    return { identifier, controllerConstructor };
+  }
+}
+function identifierForContextKey(key) {
+  const logicalName = (key.match(/^(?:\.\/)?(.+)(?:[_-]controller\..+?)$/) || [])[1];
+  if (logicalName) {
+    return logicalName.replace(/_/g, "-").replace(/\//g, "--");
+  }
+}
 
 // app/javascript/controllers/index.js
-application.register("hello", hello_controller_default);
+var application = Application.start();
+var context = __require.context("controllers", true, /_controller\.js$/);
+application.load(definitionsFromContext(context));
 /*! Bundled license information:
 
 @hotwired/turbo/dist/turbo.es2017-esm.js:

@@ -1,16 +1,12 @@
 
 import { Controller } from "@hotwired/stimulus"
 import Swiper from "swiper"
-import { Navigation, Pagination } from "swiper/modules"
-
-import "swiper/css"
-import "swiper/css/navigation"
-import "swiper/css/pagination"
+import { Navigation } from "swiper/modules"
 
 export default class extends Controller {
   connect() {
     new Swiper(".swiper", {
-      modules: [Navigation, Pagination],
+      modules: [Navigation],
       direction: "horizontal",
       slidesPerView: 3,
       loop: true,
@@ -18,9 +14,6 @@ export default class extends Controller {
       spaceBetween: 600,
       centeredSlides: true,
 
-      pagination: {
-        el: ".swiper-pagination",
-      },
       navigation: {
           nextEl: '.swiper-button-next-jobs',
           prevEl: '.swiper-button-prev-jobs',

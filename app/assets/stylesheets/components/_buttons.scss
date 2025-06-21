@@ -33,7 +33,7 @@ $black: #191414;
   cursor: pointer;
   background-color: $black;
   border: 1px solid $black;
-  background-image: image-url("right-arrow-white.svg");
+  background-image: url("/assets/right-arrow-white.svg");
   background-size: 25px;
   background-repeat: no-repeat;
   background-position: 50%;
@@ -47,7 +47,7 @@ $black: #191414;
     margin-right: 16px;
     transition-duration: 500ms;
     transition-property: background-color, margin-right;
-    background-image: image-url("right-arrow.svg");
+    background-image: url("/assets/right-arrow.svg");
     background-size: 25px;
   }
 }
@@ -93,7 +93,7 @@ $black: #191414;
   width: 60px;
   height: 60px;
   cursor: pointer;
-  background-image: image-url("up-arrow.svg");
+  background-image: url("/assets/up-arrow.svg");
   background-repeat: no-repeat;
   background-position: 50%;
   background-size: 25px;
@@ -102,7 +102,7 @@ $black: #191414;
   &:hover {
     background-color: $black;
     border: 1px solid white;
-    background-image: image-url("up-arrow-white.svg");
+    background-image: url("/assets/up-arrow-white.svg");
     background-size: 25px;
     transition-duration: 400ms;
     transition-property: background-color;

@@ -7,7 +7,7 @@
 //   <h1 data-hello-target="output"></h1>
 // </div>
 
-import { Controller } from "stimulus"
+import { Controller } from "@hotwired/stimulus"
 
 export default class extends Controller {
   static targets = [ "output" ]

@@ -1,11 +1,16 @@
-// Load all the controllers within this directory and all subdirectories. 
-// Controller files must be named *_controller.js.
-
 import { Application } from "@hotwired/stimulus"
-import { definitionsFromContext } from "@hotwired/stimulus-webpack-helpers"
+
+import ButtontotopController from "./buttontotop_controller"
+import HelloController from "./hello_controller"
+import ScrollanimationController from "./scrollanimation_controller"
+//import CarouseleducationController from "./carouseleducation_controller"
+//import CarouselijobsController from "./carouselijobs_controller"
+import NavbarController from "./navbar_controller"  
 
 const application = Application.start()
-const context = require.context("controllers", true, /_controller\.js$/)
-application.load(definitionsFromContext(context))
-
-
+application.register("buttontotop", ButtontotopController)
+application.register("hello", HelloController)
+application.register("scrollanimation", ScrollanimationController)
+//application.register("carouseleducation", CarouseleducationController)
+//application.register("carouselijobs", CarouselijobsController)
+application.register("navbar", NavbarController)

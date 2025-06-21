@@ -1,21 +1,15 @@
-import { Controller } from "stimulus"
-import Swiper from 'swiper';
-// core version + navigation, pagination modules:
-import SwiperCore, { Pagination, Navigation } from 'swiper/core';
-
-// configure Swiper to use modules
-SwiperCore.use([Pagination]);
+import { Controller } from "@hotwired/stimulus"
+import Swiper from "swiper"
+import { Navigation } from "swiper/modules"
 
 export default class extends Controller {
-
   connect() {
-    new Swiper('.swiper-container', {
-      // Optional parameters
-      direction: 'horizontal',
+    new Swiper(".swiper", {
+      modules: [Navigation],
+      direction: "horizontal",
       loop: true,
       slidesPerView: 3,
-      centeredSlides: true,
-    });
+      centeredSlides: true
+    })
   }
 }
-

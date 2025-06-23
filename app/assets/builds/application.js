@@ -8543,13 +8543,6 @@ var buttontotop_controller_default = class extends Controller {
   }
 };
 
-// app/javascript/controllers/hello_controller.js
-var hello_controller_default = class extends Controller {
-  static targets = ["output"];
-  connect() {
-  }
-};
-
 // app/javascript/controllers/scrollanimation_controller.js
 var scrollanimation_controller_default = class extends Controller {
   static targets = ["colored", "projectstitle", "projectnames"];
@@ -12978,11 +12971,10 @@ var navbar_controller_default = class extends Controller {
 // app/javascript/controllers/index.js
 var application = Application.start();
 application.register("buttontotop", buttontotop_controller_default);
-application.register("hello", hello_controller_default);
-application.register("scrollanimation", scrollanimation_controller_default);
-application.register("carouseleducation", carouseleducation_controller_default);
-application.register("carouselijobs", carouselijobs_controller_default);
 application.register("navbar", navbar_controller_default);
+application.register("scrollanimation", scrollanimation_controller_default);
+application.register("carouselijobs", carouselijobs_controller_default);
+application.register("carouseleducation", carouseleducation_controller_default);
 /*! Bundled license information:
 
 @hotwired/turbo/dist/turbo.es2017-esm.js:

@@ -4,19 +4,22 @@ import Swiper from "swiper"
 import { Navigation } from "swiper/modules"
 
 export default class extends Controller {
+  static targets = ["prev", "next"]
+
   connect() {
-    new Swiper(".swiper", {
+    new Swiper(this.element, {
       modules: [Navigation],
       direction: "horizontal",
-      slidesPerView: 3,
+      runCallbacksOnInit: true,
+      slidesPerView: 5,
       loop: true,
-      simulateTouch: false,
-      spaceBetween: 600,
+      simulateTouch: true,
+      spaceBetween: 40,
       centeredSlides: true,
 
       navigation: {
-          nextEl: '.swiper-button-next-jobs',
-          prevEl: '.swiper-button-prev-jobs',
+        nextEl: this.nextTarget,
+        prevEl: this.prevTarget
       },
     })
   }

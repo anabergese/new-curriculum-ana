@@ -12929,20 +12929,22 @@ var carouseleducation_controller_default = class extends Controller {
   }
 };
 
-// app/javascript/controllers/carouselijobs_controller.js
-var carouselijobs_controller_default = class extends Controller {
+// app/javascript/controllers/carouseljobs_controller.js
+var carouseljobs_controller_default = class extends Controller {
+  static targets = ["prev", "next"];
   connect() {
-    new Swiper(".swiper", {
+    new Swiper(this.element, {
       modules: [Navigation],
       direction: "horizontal",
-      slidesPerView: 3,
+      runCallbacksOnInit: true,
+      slidesPerView: 5,
       loop: true,
-      simulateTouch: false,
-      spaceBetween: 600,
+      simulateTouch: true,
+      spaceBetween: 40,
       centeredSlides: true,
       navigation: {
-        nextEl: ".swiper-button-next-jobs",
-        prevEl: ".swiper-button-prev-jobs"
+        nextEl: this.nextTarget,
+        prevEl: this.prevTarget
       }
     });
   }
@@ -12973,7 +12975,7 @@ var application = Application.start();
 application.register("buttontotop", buttontotop_controller_default);
 application.register("navbar", navbar_controller_default);
 application.register("scrollanimation", scrollanimation_controller_default);
-application.register("carouselijobs", carouselijobs_controller_default);
+application.register("carouseljobs", carouseljobs_controller_default);
 application.register("carouseleducation", carouseleducation_controller_default);
 /*! Bundled license information:
 

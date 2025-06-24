@@ -11,11 +11,13 @@ export default class extends Controller {
       modules: [Navigation],
       direction: "horizontal",
       runCallbacksOnInit: true,
-      slidesPerView: 5,
+      slidesPerView: "auto",
+      centerInsufficientSlides: true,
+      centeredSlides: true,
+      centeredSlidesBounds: true,
+      initialSlide: 0,
       loop: true,
       simulateTouch: true,
-      spaceBetween: 40,
-      centeredSlides: true,
 
       navigation: {
         nextEl: this.nextTarget,

@@ -7,7 +7,7 @@ class CoverController < ApplicationController
 
   def content_moderator; end
 
-  def customer_service; end
+  def technical_engineer; end
 
   def marketing; end
 

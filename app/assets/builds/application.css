@@ -727,8 +727,14 @@
   font-size: 32px;
 }
 
+.project-icons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .project-icons img {
-  width: 32px;
+  width: 50px;
   padding: 0px 8px;
 }
 

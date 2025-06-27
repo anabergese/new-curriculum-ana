@@ -5,7 +5,7 @@ class CoverController < ApplicationController
 
   def npaw; end
 
-  def content_moderator; end
+  def ux_ui; end
 
   def technical_engineer; end
 

@@ -108,3 +108,58 @@ $black: #191414;
     transition-property: background-color;
   }
 }
+
+
+// Buttons of carousel:
+.swiper-button-next-jobs {
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  right: 30%;
+  top: 50%;
+  border-radius: 50%;
+  border-color: $black;
+  border-width: thin;
+  background-repeat: no-repeat;
+  background-position: 50%;
+  background-color: transparent;
+  background-image: url("right-arrow.svg");
+  background-size: 25px;
+  z-index: 10;
+  cursor: pointer;
+  &:hover {
+    background-color: $black;
+    border: 1px solid white;
+    background-image: url("right-arrow-white.svg");
+    background-size: 25px;
+    transition-duration: 400ms;
+    transition-property: background-color;
+  }
+}
+
+.swiper-button-prev-jobs {
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  left: 30%;
+  top: 50%;
+  border-radius: 50%;
+  border-color: #191414;
+  border-width: thin;
+  background-repeat: no-repeat;
+  background-position: 50%;
+  background-color: transparent;
+  background-image: url("right-arrow.svg");
+  background-size: 25px;
+  z-index: 10;
+  cursor: pointer;
+  transform: rotate(180deg);
+  &:hover {
+    background-color: $black;
+    border: 1px solid white;
+    background-image: url("right-arrow-white.svg");
+    background-size: 25px;
+    transition-duration: 400ms;
+    transition-property: background-color;
+  }
+}

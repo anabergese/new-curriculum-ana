@@ -80,6 +80,59 @@
   transition-property: background-color;
 }
 
+.swiper-button-next-jobs {
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  right: 30%;
+  top: 50%;
+  border-radius: 50%;
+  border-color: #191414;
+  border-width: thin;
+  background-repeat: no-repeat;
+  background-position: 50%;
+  background-color: transparent;
+  background-image: url("right-arrow.svg");
+  background-size: 25px;
+  z-index: 10;
+  cursor: pointer;
+}
+.swiper-button-next-jobs:hover {
+  background-color: #191414;
+  border: 1px solid white;
+  background-image: url("right-arrow-white.svg");
+  background-size: 25px;
+  transition-duration: 400ms;
+  transition-property: background-color;
+}
+
+.swiper-button-prev-jobs {
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  left: 30%;
+  top: 50%;
+  border-radius: 50%;
+  border-color: #191414;
+  border-width: thin;
+  background-repeat: no-repeat;
+  background-position: 50%;
+  background-color: transparent;
+  background-image: url("right-arrow.svg");
+  background-size: 25px;
+  z-index: 10;
+  cursor: pointer;
+  transform: rotate(180deg);
+}
+.swiper-button-prev-jobs:hover {
+  background-color: #191414;
+  border: 1px solid white;
+  background-image: url("right-arrow-white.svg");
+  background-size: 25px;
+  transition-duration: 400ms;
+  transition-property: background-color;
+}
+
 .summary {
   width: 100vw;
   height: 100vh;
@@ -504,9 +557,25 @@
   color: #191414;
 }
 
+.swiper-slide {
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  min-height: 500px;
+  background: transparent;
+  transition: transform 0.3s ease, scale 0.3s ease;
+  opacity: 0.6;
+}
+
+.jobs .swiper-slide-active {
+  opacity: 1;
+  transform: scale(1);
+  z-index: 10;
+}
+
 .card-jobs {
   width: 351px;
-  height: 438px;
+  min-height: 500px;
   padding: 30px;
   display: flex;
   flex-direction: column;
@@ -534,58 +603,6 @@
   align-items: center;
   border-radius: 100px;
   background-color: #D5F5D9;
-}
-
-.swiper-slide {
-  flex-shrink: unset !important;
-  margin-right: 30px;
-  margin-left: 30px;
-  background: transparent;
-  transition: transform 0.3s ease, scale 0.3s ease;
-  opacity: 0.6;
-}
-
-.jobs .swiper-slide-active {
-  opacity: 1;
-  transform: scale(1);
-  z-index: 10;
-}
-
-.swiper-button-next-jobs {
-  position: absolute;
-  width: 60px;
-  height: 60px;
-  left: 95%;
-  top: 50%;
-  border-radius: 50%;
-  border-color: #191414;
-  border-width: thin;
-  background-repeat: no-repeat;
-  background-position: 50%;
-  background-color: transparent;
-  background-image: url("right-arrow.svg");
-  background-size: 25px;
-  z-index: 10;
-  cursor: pointer;
-}
-
-.swiper-button-prev-jobs {
-  position: absolute;
-  width: 60px;
-  height: 60px;
-  left: 1%;
-  top: 50%;
-  border-radius: 50%;
-  border-color: #191414;
-  border-width: thin;
-  background-repeat: no-repeat;
-  background-position: 50%;
-  background-color: transparent;
-  background-image: url("right-arrow.svg");
-  background-size: 25px;
-  z-index: 10;
-  cursor: pointer;
-  transform: rotate(180deg);
 }
 
 @media only screen and (max-width: 600px) {

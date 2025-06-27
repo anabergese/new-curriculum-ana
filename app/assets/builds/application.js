@@ -12944,6 +12944,7 @@ var carouseljobs_controller_default = class extends Controller {
       initialSlide: 0,
       loop: true,
       simulateTouch: true,
+      speed: 500,
       navigation: {
         nextEl: this.nextTarget,
         prevEl: this.prevTarget
